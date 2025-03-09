@@ -12,7 +12,7 @@ import ttf2woff2 from 'gulp-ttf2woff2';
 import ttf2woff from 'gulp-ttf2woff';
 import fonter from 'gulp-fonter';
 
-const project_folder = './dist';
+const project_folder = './docs';
 const source_folder = './src'; // Изменил на src, так как это более стандартное название
 const { src, dest, series, parallel, watch } = gulp;
 const sass = gulpSass(dartSass);

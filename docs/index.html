@@ -15,7 +15,7 @@
     <header>
       <div class="container">
         <div class="logo"><img src="img/basalt-logo.svg"/></div>
-        <div class="navbar d-none--tablet d-none--mob"><a class="navbar__item" href="#about">о нас </a><a class="navbar__item" href="#team">команда</a><a class="navbar__item" href="#servicer">услуги</a><a class="navbar__item" href="#cases">кейсы</a></div>
+        <div class="navbar d-none--tablet d-none--mob"><a class="navbar__item" href="#about">о нас </a><a class="navbar__item" href="#team">команда</a><a class="navbar__item" href="#services">услуги</a></div>
         <div class="request d-none--tablet d-none--mob"><a class="btn btn--target clickable-scale" href="#request">Оставить заявку</a></div>
         <div class="burger d-none--desc" data-modal-open="header-mobile">
           <div class="burger__line"></div>
@@ -26,7 +26,7 @@
           <div class="logo"><img src="img/basalt-logo.svg"/></div>
           <div class="x-btn" data-modal-close="header-mobile"></div>
         </div>
-        <div class="navbar navbar--vertical"><a class="navbar__item" href="#about">о нас </a><a class="navbar__item" href="#team">команда</a><a class="navbar__item" href="#servicer">услуги</a><a class="navbar__item" href="#cases">кейсы</a></div>
+        <div class="navbar navbar--vertical"><a class="navbar__item" href="#about" data-modal-close="header-mobile">о нас </a><a class="navbar__item" href="#team" data-modal-close="header-mobile">команда</a><a class="navbar__item" href="#services" data-modal-close="header-mobile">услуги</a></div>
         <div class="request"><a class="btn btn--target clickable-scale" href="#request">Оставить заявку</a></div>
       </div>
     </header>
@@ -41,7 +41,7 @@
           </div>
         </div>
       </section>
-      <section class="sec-about-us sec-padding-y">
+      <section class="sec-about-us sec-padding-y" id="about">
         <div class="container">
           <div class="sec-about-us__wrapper ani_fadeIn opacity-0">
             <div class="sec-about-us__title box-title --top">
@@ -55,7 +55,7 @@
           </div>
         </div>
       </section>
-      <section class="sec-team sec-padding-y">
+      <section class="sec-team sec-padding-y" id="team">
         <div class="gradient-circle"></div>
         <div class="container">
           <div class="sec-team__wrapper">
@@ -85,7 +85,7 @@
           </div>
         </div>
       </section>
-      <section class="sec-services sec-padding-y">
+      <section class="sec-services sec-padding-y" id="services">
         <div class="container">
           <h2 class="h2 ani_fadeInDown opacity-0">Наши услуги</h2>
           <div class="sec-services__list d-none--mob" data-tabs="data-tabs">

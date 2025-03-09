@@ -68,6 +68,11 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   padding-top: 155px;
   color: #fff;
@@ -78,6 +83,10 @@ body {
 ul {
   list-style: none;
   padding: 0;
+}
+
+section {
+  overflow: hidden;
 }
 
 .container {
@@ -477,6 +486,7 @@ header .header-mobile .navbar__item {
 }
 
 footer {
+  overflow: hidden;
   padding-top: 64px;
   background: center/cover no-repeat url("../img/footer-bg.svg") var(--accent);
 }
@@ -520,6 +530,10 @@ footer .footer-col ul li a:hover {
 
 footer .footer-bg {
   max-width: 100%;
+}
+
+.sec-banner {
+  overflow: visible;
 }
 
 .sec-banner__content {

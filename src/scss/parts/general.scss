@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   padding-top: 155px;
   color: #fff;
@@ -16,6 +21,10 @@ body {
 ul {
   list-style: none;
   padding: 0;
+}
+
+section {
+  overflow: hidden;
 }
 
 .container {
