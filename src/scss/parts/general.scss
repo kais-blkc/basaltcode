@@ -1,0 +1,270 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 155px;
+  color: #fff;
+  background: #0e0e0e;
+  font-family: 'Onest', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  width: 1320px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.sec-padding {
+  &-y {
+    padding: 60px 0;
+
+    &--top {
+      padding-top: 60px;
+    }
+
+    &--bottom {
+      padding-bottom: 60px;
+    }
+  }
+
+  &-x {
+    padding: 0 60px;
+  }
+}
+
+.banner-text {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Unbounded', serif;
+
+  @media (max-width: 1024px) {
+    font-size: 50px;
+  }
+  @media (max-width: 500px) {
+    font-size: 38px;
+  }
+  @media (max-width: 360px) {
+    font-size: 28px;
+  }
+}
+
+.h2 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: 'Unbounded', serif;
+
+  @media (max-width: 1024px) {
+    font-size: 40px;
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.h3 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Unbounded', serif;
+
+  @media (max-width: 1024px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.text-size {
+  &__s {
+    font-size: var(--text-size-s);
+  }
+
+  &__m {
+    font-size: var(--text-size-m);
+  }
+
+  &__l {
+    font-size: var(--text-size-l);
+  }
+
+  &__xl {
+    font-size: var(--text-size-xl);
+  }
+
+  &__xxl {
+    font-size: var(--text-size-xxl);
+  }
+}
+
+.text-c {
+  &__white {
+    color: var(--white);
+  }
+
+  &__secondary {
+    color: var(--text-secondary);
+  }
+}
+
+.btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 18px 20px;
+  background: var(--button-background);
+  transition: var(--trans-02s);
+
+  &--img {
+    @extend .btn;
+    gap: 10px;
+  }
+
+  &--target {
+    @extend .btn;
+    padding: 7px;
+    padding-left: 20px;
+    gap: 10px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 46px;
+      height: 46px;
+      background-image: url('../img/arrow-target.svg');
+      background-size: cover;
+      transition: var(--trans-02s);
+    }
+
+    &:hover {
+      background-color: var(--accent);
+      &::after {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+body .d-none {
+  &--desc {
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: 768px) and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &--mob {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.x-btn {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url('../img/x-btn.svg') no-repeat center;
+  background-size: cover;
+}
+
+.img-cover {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.box {
+  &-title {
+    padding: 20px 28px;
+    border-radius: 24px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--stroke);
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+
+    &.--top {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    &.--bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    &.--bg {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        filter: brightness(0.5);
+      }
+    }
+  }
+
+  &-desc {
+    border-radius: 24px;
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--stroke);
+  }
+}
+
+.clickable-scale {
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+*[data-tabs] {
+  *[data-tabs-content] {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+.animate__animated {
+  transition: all 0.5s ease;
+}
+
+.opacity-0 {
+  opacity: 0;
+}

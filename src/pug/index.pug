@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Basalt Code
+    link(rel="stylesheet", href="./css/style.css")
+    link(rel="stylesheet", href="./css/animate.min.css")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Unbounded:wght@200..900&display=swap")
+
+  body
+
+    include ./parts/header.pug
+
+    main
+      include ./home/banner.pug
+      include ./home/about-us.pug
+      include ./home/team.pug
+      include ./home/services.pug
+    
+    include ./parts/footer.pug
+
+
+    script(src="./js/jquery.min.js")
+    script(src="./js/animate.min.js")
+    script(src="./js/main.js")

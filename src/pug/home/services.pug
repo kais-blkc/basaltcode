@@ -1,0 +1,44 @@
+mixin slmi(img, title)
+  .sec-services__item.ani_fadeInUp.opacity-0
+    img(src=img, alt="")
+    .sec-services__item-title=title
+
+section.sec-services.sec-padding-y
+  .container
+    h2.h2.ani_fadeInDown.opacity-0 Наши услуги
+
+    .sec-services__list.d-none--mob(data-tabs)
+      .sec-services__list-left.ani_fadeInLeft.opacity-0
+        .sec-services__content
+          .sec-services__content-item.img-cover(data-tabs-content="1").active
+            img(src="https://i.pinimg.com/736x/3e/8e/59/3e8e59f6c44cfe758984b3ef88e68146.jpg", alt="")
+          .sec-services__content-item.img-cover(data-tabs-content="2")
+            img(src="https://i.pinimg.com/736x/6a/8e/8f/6a8e8f30684b748e74a2e6cb223a1964.jpg", alt="")
+          .sec-services__content-item.img-cover(data-tabs-content="3")
+            img(src="https://i.pinimg.com/736x/45/11/44/451144711ed313d63ca0ba7078179f88.jpg", alt="")
+          .sec-services__content-item.img-cover(data-tabs-content="4")
+            img(src="https://assets2-proxy.respond.io/ph8r57dk1q9w/1jsNUHuXP4v37k3vJVwNuW/8a5cca7a810c70297055dca924aa2f2c/screenshot-2024-12-18-at-112105-am_c6680a3675d3ed87a5fa49cbcc2c976e.jpg", alt="")
+          .sec-services__content-item.img-cover(data-tabs-content="5")
+            img(src="https://i.pinimg.com/736x/7a/c8/14/7ac814234dc2a34ba5e681d68c8b1bc2.jpg", alt="")
+          .sec-services__content-item.img-cover(data-tabs-content="6")
+            img(src="https://cdn.dribbble.com/userupload/14152911/file/original-45b6367a10dc7d8f601af7bf75977cb6.png?resize=1504x1128&vertical=center", alt="")
+          .sec-services__content-item.img-cover(data-tabs-content="7")
+            img(src="https://cdnb.artstation.com/p/assets/covers/images/028/543/943/smaller_square/bastian-hoppe-bastian-hoppe-artstation-bh-thumb.jpg?1594770400", alt="")
+
+      .sec-services__tabs.ani_fadeInRight.opacity-0
+        .sec-services__tabs-item(data-tabs-title="1") Разработка сайтов и сервисов
+        .sec-services__tabs-item(data-tabs-title="2") Разработка мобильных приложений
+        .sec-services__tabs-item(data-tabs-title="3") UX/UI дизайн
+        .sec-services__tabs-item(data-tabs-title="4") Telegram-боты
+        .sec-services__tabs-item(data-tabs-title="5") Веб-приложения
+        .sec-services__tabs-item(data-tabs-title="6") CRM-системы
+        .sec-services__tabs-item(data-tabs-title="7") Создание игр на Unreal Engine
+
+    .sec-services__list-mob
+      +slmi('https://i.pinimg.com/736x/3e/8e/59/3e8e59f6c44cfe758984b3ef88e68146.jpg', 'Разработка сайтов и сервисов')
+      +slmi('https://i.pinimg.com/736x/6a/8e/8f/6a8e8f30684b748e74a2e6cb223a1964.jpg', 'Разработка мобильных приложений')
+      +slmi('https://i.pinimg.com/736x/45/11/44/451144711ed313d63ca0ba7078179f88.jpg', 'UX/UI дизайн')
+      +slmi('https://assets2-proxy.respond.io/ph8r57dk1q9w/1jsNUHuXP4v37k3vJVwNuW/8a5cca7a810c70297055dca924aa2f2c/screenshot-2024-12-18-at-112105-am_c6680a3675d3ed87a5fa49cbcc2c976e.jpg', 'Telegram-боты')
+      +slmi('https://i.pinimg.com/736x/7a/c8/14/7ac814234dc2a34ba5e681d68c8b1bc2.jpg', 'Веб-приложения')
+      +slmi('https://cdn.dribbble.com/userupload/14152911/file/original-45b6367a10dc7d8f601af7bf75977cb6.png?resize=1504x1128&vertical=center', 'CRM-системы')
+      +slmi('https://cdnb.artstation.com/p/assets/covers/images/028/543/943/smaller_square/bastian-hoppe-bastian-hoppe-artstation-bh-thumb.jpg?1594770400', 'Создание игр на Unreal Engine')

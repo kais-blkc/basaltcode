@@ -1,0 +1,36 @@
+header
+  .container
+    .logo
+      img(src="img/basalt-logo.svg")
+
+
+    .navbar.d-none--tablet.d-none--mob
+      a(href="#about").navbar__item о нас 
+      a(href="#team").navbar__item команда
+      a(href="#servicer").navbar__item услуги
+      a(href="#cases").navbar__item кейсы
+
+    .request.d-none--tablet.d-none--mob
+      a(href="#request").btn.btn--target.clickable-scale Оставить заявку
+
+    .burger.d-none--desc(data-modal-open="header-mobile")
+      .burger__line
+  
+  .header-mobile(data-modal-block="header-mobile")
+    .header-mobile__top
+      .logo
+        img(src="img/basalt-logo.svg")
+
+      .x-btn(data-modal-close="header-mobile")
+
+
+    .navbar.navbar--vertical
+      a(href="#about").navbar__item о нас 
+      a(href="#team").navbar__item команда
+      a(href="#servicer").navbar__item услуги
+      a(href="#cases").navbar__item кейсы
+
+    .request
+      a(href="#request").btn.btn--target.clickable-scale Оставить заявку
+
+      

@@ -1,0 +1,13 @@
+// General styles
+@forward './parts/fonts.scss';
+@forward './parts/variables.scss';
+@forward './parts/mixins.scss';
+@forward './parts/general.scss';
+@forward './parts/header.scss';
+@forward './parts/footer.scss';
+
+// Home styles
+@forward './home/banner.scss';
+@forward './home/about-us.scss';
+@forward './home/team.scss';
+@forward './home/services.scss';

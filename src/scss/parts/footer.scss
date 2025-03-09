@@ -1,0 +1,49 @@
+footer {
+  padding-top: 64px;
+  background: center / cover no-repeat url('../img/footer-bg.svg') var(--accent);
+
+  @media (max-width: 768px) {
+    padding-top: 40px;
+  }
+
+  .footer {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    &-logo {
+      margin-right: 40px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    &-col {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li a {
+          padding: 20px 0;
+          transition: var(--trans-02s);
+          display: block;
+          cursor: pointer;
+          border-radius: 12px;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    &-bg {
+      max-width: 100%;
+    }
+  }
+}

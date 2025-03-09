@@ -1,0 +1,21 @@
+mixin teamItem($title, $subtitle, $className='') 
+  .sec-team__item.box-title.--bottom-left(class=$className, style=`grid-area: ${$className}`).ani_backInUp.opacity-0
+    .sec-team__item-subtitle.text-c__secondary=$subtitle
+    .sec-team__item-title.h3=$title
+    //- .ani_fadeIn.opacity-0
+
+section.sec-team.sec-padding-y
+  .gradient-circle
+
+  .container
+    .sec-team__wrapper
+
+      .sec-team__item.box-title.--top-right.--bg.team(style=`grid-area: team;`).ani_backInRight.opacity-0
+        img(src='https://i.pinimg.com/736x/47/13/93/471393952b99dd6916391f1f9d718c14.jpg')
+        .h2 Команда
+          
+      +teamItem('CEO', 'Мансур', 'ceo')
+      +teamItem('Фронтендеры', 'Мухаммадсалам, Насир, Султан', 'frontend')
+      +teamItem('Дизайн', 'Али', 'design')
+      +teamItem('Проджекты', 'Тимур, Юнус', 'projects')
+      +teamItem('Бэкендеры', 'Ринат', 'backend')

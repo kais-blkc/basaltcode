@@ -1,0 +1,74 @@
+.sec-team {
+  position: relative;
+
+  .gradient-circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+      circle at center,
+      var(--additionally-1),
+      transparent
+    );
+    filter: blur(100px);
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: circle-pulse 6s infinite;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    grid-template-areas:
+      'ceo design team'
+      'ceo projects team'
+      'frontend backend team';
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+        'team team'
+        'ceo design '
+        'ceo projects'
+        'frontend backend';
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    min-height: 200px;
+    transition: var(--trans-02s);
+    word-break: break-all;
+    &:hover {
+      background-color: var(--accent-hover);
+    }
+
+    @media (max-width: 768px) {
+      min-height: 50px;
+    }
+
+    &.team {
+      backdrop-filter: brightness(0.5);
+    }
+  }
+}
+
+@keyframes circle-pulse {
+  0% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.2) translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}

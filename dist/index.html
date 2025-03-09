@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Basalt Code</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&amp;family=Onest:wght@100..900&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&amp;family=Onest:wght@100..900&amp;family=Unbounded:wght@200..900&amp;display=swap"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><img src="img/basalt-logo.svg"/></div>
+        <div class="navbar d-none--tablet d-none--mob"><a class="navbar__item" href="#about">о нас </a><a class="navbar__item" href="#team">команда</a><a class="navbar__item" href="#servicer">услуги</a><a class="navbar__item" href="#cases">кейсы</a></div>
+        <div class="request d-none--tablet d-none--mob"><a class="btn btn--target clickable-scale" href="#request">Оставить заявку</a></div>
+        <div class="burger d-none--desc" data-modal-open="header-mobile">
+          <div class="burger__line"></div>
+        </div>
+      </div>
+      <div class="header-mobile" data-modal-block="header-mobile">
+        <div class="header-mobile__top">
+          <div class="logo"><img src="img/basalt-logo.svg"/></div>
+          <div class="x-btn" data-modal-close="header-mobile"></div>
+        </div>
+        <div class="navbar navbar--vertical"><a class="navbar__item" href="#about">о нас </a><a class="navbar__item" href="#team">команда</a><a class="navbar__item" href="#servicer">услуги</a><a class="navbar__item" href="#cases">кейсы</a></div>
+        <div class="request"><a class="btn btn--target clickable-scale" href="#request">Оставить заявку</a></div>
+      </div>
+    </header>
+    <main>
+      <section class="sec-banner">
+        <div class="container">
+          <div class="sec-banner__content animate__animated animate__fadeIn">
+            <div class="sec-banner__content-img img-cover" style="background-image: url(
+          https://images.unsplash.com/photo-1552688419-9949ce9dd731?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+          )"><img src="https://images.unsplash.com/photo-1552688419-9949ce9dd731?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""/></div>
+            <div class="sec-banner__content-text banner-text">Мы создаем креативные <br class="d-none--tablet"> цифровые продукты</div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-about-us sec-padding-y">
+        <div class="container">
+          <div class="sec-about-us__wrapper ani_fadeIn opacity-0">
+            <div class="sec-about-us__title box-title --top">
+              <h2 class="h2">О нас</h2>
+            </div>
+            <div class="sec-about-us__desc box-desc text-c__secondary">
+              <p>Мы — команда увлеченных людей, которые любят создавать крутые цифровые решения.</p>
+              <p>Делаем продукты, которые работают: <span class="text-c__white ani_fadeIn opacity-0 animate__delay-1s">просто, удобно и красиво</span>. Для нас важно, чтобы всё было понятно и вам, и вашим клиентам. Мы за честность и прямоту — если что-то можно сделать лучше, мы об этом скажем.</p>
+              <p>Работая с нами, вы получите не просто исполнителей, а партнеров, которым можно доверять. Мы ценим простоту в общении и стремимся, чтобы <span class="text-c__white ani_fadeIn opacity-0 animate__delay-1s">весь процесс был максимально комфортным и эффективным</span>. <br/> Будем рады создать для вас сайт, который понравится и вам, и вашим клиентам!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-team sec-padding-y">
+        <div class="gradient-circle"></div>
+        <div class="container">
+          <div class="sec-team__wrapper">
+            <div class="sec-team__item box-title --top-right --bg team ani_backInRight opacity-0" style="grid-area: team;"><img src="https://i.pinimg.com/736x/47/13/93/471393952b99dd6916391f1f9d718c14.jpg"/>
+              <div class="h2">Команда</div>
+            </div>
+                  <div class="sec-team__item box-title --bottom-left ceo ani_backInUp opacity-0" style="grid-area: ceo">
+                    <div class="sec-team__item-subtitle text-c__secondary">Мансур</div>
+                    <div class="sec-team__item-title h3">CEO</div>
+                  </div>
+                  <div class="sec-team__item box-title --bottom-left frontend ani_backInUp opacity-0" style="grid-area: frontend">
+                    <div class="sec-team__item-subtitle text-c__secondary">Мухаммадсалам, Насир, Султан</div>
+                    <div class="sec-team__item-title h3">Фронтендеры</div>
+                  </div>
+                  <div class="sec-team__item box-title --bottom-left design ani_backInUp opacity-0" style="grid-area: design">
+                    <div class="sec-team__item-subtitle text-c__secondary">Али</div>
+                    <div class="sec-team__item-title h3">Дизайн</div>
+                  </div>
+                  <div class="sec-team__item box-title --bottom-left projects ani_backInUp opacity-0" style="grid-area: projects">
+                    <div class="sec-team__item-subtitle text-c__secondary">Тимур, Юнус</div>
+                    <div class="sec-team__item-title h3">Проджекты</div>
+                  </div>
+                  <div class="sec-team__item box-title --bottom-left backend ani_backInUp opacity-0" style="grid-area: backend">
+                    <div class="sec-team__item-subtitle text-c__secondary">Ринат</div>
+                    <div class="sec-team__item-title h3">Бэкендеры</div>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec-services sec-padding-y">
+        <div class="container">
+          <h2 class="h2 ani_fadeInDown opacity-0">Наши услуги</h2>
+          <div class="sec-services__list d-none--mob" data-tabs="data-tabs">
+            <div class="sec-services__list-left ani_fadeInLeft opacity-0">
+              <div class="sec-services__content">
+                <div class="sec-services__content-item img-cover active" data-tabs-content="1"><img src="https://i.pinimg.com/736x/3e/8e/59/3e8e59f6c44cfe758984b3ef88e68146.jpg" alt=""/></div>
+                <div class="sec-services__content-item img-cover" data-tabs-content="2"><img src="https://i.pinimg.com/736x/6a/8e/8f/6a8e8f30684b748e74a2e6cb223a1964.jpg" alt=""/></div>
+                <div class="sec-services__content-item img-cover" data-tabs-content="3"><img src="https://i.pinimg.com/736x/45/11/44/451144711ed313d63ca0ba7078179f88.jpg" alt=""/></div>
+                <div class="sec-services__content-item img-cover" data-tabs-content="4"><img src="https://assets2-proxy.respond.io/ph8r57dk1q9w/1jsNUHuXP4v37k3vJVwNuW/8a5cca7a810c70297055dca924aa2f2c/screenshot-2024-12-18-at-112105-am_c6680a3675d3ed87a5fa49cbcc2c976e.jpg" alt=""/></div>
+                <div class="sec-services__content-item img-cover" data-tabs-content="5"><img src="https://i.pinimg.com/736x/7a/c8/14/7ac814234dc2a34ba5e681d68c8b1bc2.jpg" alt=""/></div>
+                <div class="sec-services__content-item img-cover" data-tabs-content="6"><img src="https://cdn.dribbble.com/userupload/14152911/file/original-45b6367a10dc7d8f601af7bf75977cb6.png?resize=1504x1128&amp;vertical=center" alt=""/></div>
+                <div class="sec-services__content-item img-cover" data-tabs-content="7"><img src="https://cdnb.artstation.com/p/assets/covers/images/028/543/943/smaller_square/bastian-hoppe-bastian-hoppe-artstation-bh-thumb.jpg?1594770400" alt=""/></div>
+              </div>
+            </div>
+            <div class="sec-services__tabs ani_fadeInRight opacity-0">
+              <div class="sec-services__tabs-item" data-tabs-title="1">Разработка сайтов и сервисов</div>
+              <div class="sec-services__tabs-item" data-tabs-title="2">Разработка мобильных приложений</div>
+              <div class="sec-services__tabs-item" data-tabs-title="3">UX/UI дизайн</div>
+              <div class="sec-services__tabs-item" data-tabs-title="4">Telegram-боты</div>
+              <div class="sec-services__tabs-item" data-tabs-title="5">Веб-приложения</div>
+              <div class="sec-services__tabs-item" data-tabs-title="6">CRM-системы</div>
+              <div class="sec-services__tabs-item" data-tabs-title="7">Создание игр на Unreal Engine</div>
+            </div>
+          </div>
+          <div class="sec-services__list-mob">
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://i.pinimg.com/736x/3e/8e/59/3e8e59f6c44cfe758984b3ef88e68146.jpg" alt=""/>
+                    <div class="sec-services__item-title">Разработка сайтов и сервисов</div>
+                  </div>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://i.pinimg.com/736x/6a/8e/8f/6a8e8f30684b748e74a2e6cb223a1964.jpg" alt=""/>
+                    <div class="sec-services__item-title">Разработка мобильных приложений</div>
+                  </div>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://i.pinimg.com/736x/45/11/44/451144711ed313d63ca0ba7078179f88.jpg" alt=""/>
+                    <div class="sec-services__item-title">UX/UI дизайн</div>
+                  </div>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://assets2-proxy.respond.io/ph8r57dk1q9w/1jsNUHuXP4v37k3vJVwNuW/8a5cca7a810c70297055dca924aa2f2c/screenshot-2024-12-18-at-112105-am_c6680a3675d3ed87a5fa49cbcc2c976e.jpg" alt=""/>
+                    <div class="sec-services__item-title">Telegram-боты</div>
+                  </div>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://i.pinimg.com/736x/7a/c8/14/7ac814234dc2a34ba5e681d68c8b1bc2.jpg" alt=""/>
+                    <div class="sec-services__item-title">Веб-приложения</div>
+                  </div>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://cdn.dribbble.com/userupload/14152911/file/original-45b6367a10dc7d8f601af7bf75977cb6.png?resize=1504x1128&amp;vertical=center" alt=""/>
+                    <div class="sec-services__item-title">CRM-системы</div>
+                  </div>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://cdnb.artstation.com/p/assets/covers/images/028/543/943/smaller_square/bastian-hoppe-bastian-hoppe-artstation-bh-thumb.jpg?1594770400" alt=""/>
+                    <div class="sec-services__item-title">Создание игр на Unreal Engine</div>
+                  </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-logo"><img src="./img/basalt-icon.svg" alt="Basalt Code"/></div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">о нас</a></li>
+              <li><a href="#">команда</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#">услуги</a></li>
+              <li><a href="#">кейсы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><img class="footer-bg footer-bg opacity-0 ani_jackInTheBox" src="./img/footer-basalt.svg" alt="footer-bg"/>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/animate.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
