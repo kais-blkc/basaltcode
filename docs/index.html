@@ -15,8 +15,8 @@
     <header>
       <div class="container">
         <div class="logo"><img src="img/basalt-logo.svg"/></div>
-        <div class="navbar d-none--tablet d-none--mob"><a class="navbar__item" href="#about">о нас </a><a class="navbar__item" href="#team">команда</a><a class="navbar__item" href="#services">услуги</a></div>
-        <div class="request d-none--tablet d-none--mob"><a class="btn btn--target clickable-scale" href="#request">Оставить заявку</a></div>
+        <div class="navbar d-none--tablet d-none--mob"><a class="navbar__item" href="#about">О нас </a><a class="navbar__item" href="#team">Команда</a><a class="navbar__item" href="#services">Услуги</a><a class="navbar__item" href="#cases">Кейсы</a></div>
+        <div class="request d-none--tablet d-none--mob"><a class="btn btn--target clickable-scale" href="#request" data-modal-open="send-request">Оставить заявку</a></div>
         <div class="burger d-none--desc" data-modal-open="header-mobile">
           <div class="burger__line"></div>
         </div>
@@ -26,17 +26,15 @@
           <div class="logo"><img src="img/basalt-logo.svg"/></div>
           <div class="x-btn" data-modal-close="header-mobile"></div>
         </div>
-        <div class="navbar navbar--vertical"><a class="navbar__item" href="#about" data-modal-close="header-mobile">о нас </a><a class="navbar__item" href="#team" data-modal-close="header-mobile">команда</a><a class="navbar__item" href="#services" data-modal-close="header-mobile">услуги</a></div>
-        <div class="request"><a class="btn btn--target clickable-scale" href="#request">Оставить заявку</a></div>
+        <div class="navbar navbar--vertical"><a class="navbar__item" href="#about" data-modal-close="header-mobile">О нас </a><a class="navbar__item" href="#team" data-modal-close="header-mobile">Команда</a><a class="navbar__item" href="#services" data-modal-close="header-mobile">Услуги</a><a class="navbar__item" href="#services" data-modal-close="header-mobile">Кейсы</a></div>
+        <div class="request"><a class="btn btn--target clickable-scale" href="#request" data-modal-open="send-request" data-modal-close="header-mobile">Оставить заявку</a></div>
       </div>
     </header>
     <main>
       <section class="sec-banner">
         <div class="container">
           <div class="sec-banner__content animate__animated animate__fadeIn">
-            <div class="sec-banner__content-img img-cover" style="background-image: url(
-          https://images.unsplash.com/photo-1552688419-9949ce9dd731?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-          )"><img src="https://images.unsplash.com/photo-1552688419-9949ce9dd731?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""/></div>
+            <div class="sec-banner__content-img img-cover" style="background-image: url(img/banner.png)"><img src="img/banner.png" alt=""/></div>
             <div class="sec-banner__content-text banner-text">Мы создаем креативные <br class="d-none--tablet"> цифровые продукты</div>
           </div>
         </div>
@@ -59,7 +57,7 @@
         <div class="gradient-circle"></div>
         <div class="container">
           <div class="sec-team__wrapper">
-            <div class="sec-team__item box-title --top-right --bg team ani_backInRight opacity-0" style="grid-area: team;"><img src="https://i.pinimg.com/736x/47/13/93/471393952b99dd6916391f1f9d718c14.jpg"/>
+            <div class="sec-team__item box-title --top-right --bg team ani_backInRight opacity-0" style="grid-area: team;"><img src="img/team-bg.png" alt="" lazyload="lazyload"/>
               <div class="h2">Команда</div>
             </div>
                   <div class="sec-team__item box-title --bottom-left ceo ani_backInUp opacity-0" style="grid-area: ceo">
@@ -88,73 +86,215 @@
       <section class="sec-services sec-padding-y" id="services">
         <div class="container">
           <h2 class="h2 ani_fadeInDown opacity-0">Наши услуги</h2>
-          <div class="sec-services__list d-none--mob" data-tabs="data-tabs">
-            <div class="sec-services__list-left ani_fadeInLeft opacity-0">
-              <div class="sec-services__content">
-                <div class="sec-services__content-item img-cover active" data-tabs-content="1"><img src="https://i.pinimg.com/736x/3e/8e/59/3e8e59f6c44cfe758984b3ef88e68146.jpg" alt=""/></div>
-                <div class="sec-services__content-item img-cover" data-tabs-content="2"><img src="https://i.pinimg.com/736x/6a/8e/8f/6a8e8f30684b748e74a2e6cb223a1964.jpg" alt=""/></div>
-                <div class="sec-services__content-item img-cover" data-tabs-content="3"><img src="https://i.pinimg.com/736x/45/11/44/451144711ed313d63ca0ba7078179f88.jpg" alt=""/></div>
-                <div class="sec-services__content-item img-cover" data-tabs-content="4"><img src="https://assets2-proxy.respond.io/ph8r57dk1q9w/1jsNUHuXP4v37k3vJVwNuW/8a5cca7a810c70297055dca924aa2f2c/screenshot-2024-12-18-at-112105-am_c6680a3675d3ed87a5fa49cbcc2c976e.jpg" alt=""/></div>
-                <div class="sec-services__content-item img-cover" data-tabs-content="5"><img src="https://i.pinimg.com/736x/7a/c8/14/7ac814234dc2a34ba5e681d68c8b1bc2.jpg" alt=""/></div>
-                <div class="sec-services__content-item img-cover" data-tabs-content="6"><img src="https://cdn.dribbble.com/userupload/14152911/file/original-45b6367a10dc7d8f601af7bf75977cb6.png?resize=1504x1128&amp;vertical=center" alt=""/></div>
-                <div class="sec-services__content-item img-cover" data-tabs-content="7"><img src="https://cdnb.artstation.com/p/assets/covers/images/028/543/943/smaller_square/bastian-hoppe-bastian-hoppe-artstation-bh-thumb.jpg?1594770400" alt=""/></div>
-              </div>
-            </div>
-            <div class="sec-services__tabs ani_fadeInRight opacity-0">
-              <div class="sec-services__tabs-item" data-tabs-title="1">Разработка сайтов и сервисов</div>
-              <div class="sec-services__tabs-item" data-tabs-title="2">Разработка мобильных приложений</div>
-              <div class="sec-services__tabs-item" data-tabs-title="3">UX/UI дизайн</div>
-              <div class="sec-services__tabs-item" data-tabs-title="4">Telegram-боты</div>
-              <div class="sec-services__tabs-item" data-tabs-title="5">Веб-приложения</div>
-              <div class="sec-services__tabs-item" data-tabs-title="6">CRM-системы</div>
-              <div class="sec-services__tabs-item" data-tabs-title="7">Создание игр на Unreal Engine</div>
-            </div>
+          <div class="d-none--mob">
+                  <div class="tabs-v__list" data-tabs="data-tabs">
+                    <div class="tabs-v__list-left ani_fadeInLeft opacity-0">
+                      <div class="tabs-v__content">
+                              <div class="tabs-v__content-item active" data-tabs-content="1">
+                                <div class="sec-services__img block-absolute img-cover"><img src="img/service-site.png" alt=""/></div>
+                              </div>
+                              <div class="tabs-v__content-item" data-tabs-content="2">
+                                <div class="sec-services__img block-absolute img-cover"><img src="img/service-mobile.png" alt=""/></div>
+                              </div>
+                              <div class="tabs-v__content-item" data-tabs-content="3">
+                                <div class="sec-services__img block-absolute img-cover"><img src="img/service-design.png" alt=""/></div>
+                              </div>
+                              <div class="tabs-v__content-item" data-tabs-content="4">
+                                <div class="sec-services__img block-absolute img-cover"><img src="img/service-bot.png" alt=""/></div>
+                              </div>
+                              <div class="tabs-v__content-item" data-tabs-content="5">
+                                <div class="sec-services__img block-absolute img-cover"><img src="img/service-web-app.png" alt=""/></div>
+                              </div>
+                              <div class="tabs-v__content-item" data-tabs-content="6">
+                                <div class="sec-services__img block-absolute img-cover"><img src="img/service-crm.png" alt=""/></div>
+                              </div>
+                              <div class="tabs-v__content-item" data-tabs-content="7">
+                                <div class="sec-services__img block-absolute img-cover"><img src="img/service-games.png" alt=""/></div>
+                              </div>
+                      </div>
+                    </div>
+                    <div class="tabs-v__tabs ani_fadeInRight opacity-0">
+                      <div class="tabs-v__tabs-item active" data-tabs-title="1">Разработка сайтов и сервисов</div>
+                      <div class="tabs-v__tabs-item" data-tabs-title="2">Разработка мобильных приложений</div>
+                      <div class="tabs-v__tabs-item" data-tabs-title="3">UX/UI дизайн</div>
+                      <div class="tabs-v__tabs-item" data-tabs-title="4">Telegram-боты</div>
+                      <div class="tabs-v__tabs-item" data-tabs-title="5">Веб-приложения</div>
+                      <div class="tabs-v__tabs-item" data-tabs-title="6">CRM-системы</div>
+                      <div class="tabs-v__tabs-item" data-tabs-title="7">Создание игр на Unreal Engine</div>
+                    </div>
+                  </div>
           </div>
           <div class="sec-services__list-mob">
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://i.pinimg.com/736x/3e/8e/59/3e8e59f6c44cfe758984b3ef88e68146.jpg" alt=""/>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-site.png" alt=""/>
                     <div class="sec-services__item-title">Разработка сайтов и сервисов</div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://i.pinimg.com/736x/6a/8e/8f/6a8e8f30684b748e74a2e6cb223a1964.jpg" alt=""/>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-mobile.png" alt=""/>
                     <div class="sec-services__item-title">Разработка мобильных приложений</div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://i.pinimg.com/736x/45/11/44/451144711ed313d63ca0ba7078179f88.jpg" alt=""/>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-design.png" alt=""/>
                     <div class="sec-services__item-title">UX/UI дизайн</div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://assets2-proxy.respond.io/ph8r57dk1q9w/1jsNUHuXP4v37k3vJVwNuW/8a5cca7a810c70297055dca924aa2f2c/screenshot-2024-12-18-at-112105-am_c6680a3675d3ed87a5fa49cbcc2c976e.jpg" alt=""/>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-bot.png" alt=""/>
                     <div class="sec-services__item-title">Telegram-боты</div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://i.pinimg.com/736x/7a/c8/14/7ac814234dc2a34ba5e681d68c8b1bc2.jpg" alt=""/>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-web-app.png" alt=""/>
                     <div class="sec-services__item-title">Веб-приложения</div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://cdn.dribbble.com/userupload/14152911/file/original-45b6367a10dc7d8f601af7bf75977cb6.png?resize=1504x1128&amp;vertical=center" alt=""/>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-crm.png" alt=""/>
                     <div class="sec-services__item-title">CRM-системы</div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="https://cdnb.artstation.com/p/assets/covers/images/028/543/943/smaller_square/bastian-hoppe-bastian-hoppe-artstation-bh-thumb.jpg?1594770400" alt=""/>
+                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-games.png" alt=""/>
                     <div class="sec-services__item-title">Создание игр на Unreal Engine</div>
                   </div>
           </div>
+        </div>
+      </section>
+      <section class="sec-cases sec-padding-y" id="cases">
+        <div class="container df-gap-col-20">
+          <h2 class="h2 ani_fadeInDown opacity-0">Кейсы</h2>
+                <div class="tabs-v__list rtl" data-tabs="data-tabs">
+                  <div class="tabs-v__list-left ani_fadeInLeft opacity-0">
+                    <div class="tabs-v__content">
+                            <div class="tabs-v__content-item active" data-tabs-content="1">
+                                    <div class="cases__item">
+                                      <div class="cases__item-img img-cover"><img src="img/kolor-met.png" alt="Колор-Мет" lazyload="lazyload"/></div><a class="cases__item-title h3" href="https://kolor-met.ru/" target="_blank">Колор-Мет</a>
+                                      <div class="cases__item-desc">
+                                        <p class="text-c__accent"> Разработка сайтов и сервисов</p>
+                                        <p><span>Клиент:</span> «Колор-Мет» (приём и переработка металлолома)</p>
+                                        <p><span>Задача:</span> Разработка современного и удобного сайта для привлечения клиентов и прозрачного взаимодействия.</p>
+                                        <ul>
+                                          <li><span>Проделанная работа:</span></li>
+                                          <li>- Создан информативный и структурированный сайт с акцентом на услуги приёма металлов.</li>
+                                          <li>- Реализованы удобные разделы (прайс, FAQ, контакты) для быстрого доступа к ключевой информации.</li>
+                                          <li>- Добавлены интерактивные элементы: калькулятор цен (если есть), форма обратной связи, карта проезда.</li>
+                                          <li>- Оптимизирован UX/UI для пользователей (чёткое меню, адаптивность под мобильные устройства).</li>
+                                          <li>- Внедрена SEO-оптимизация для повышения видимости в поисковых системах.</li>
+                                        </ul>
+                                        <p><span>Результат:</span> Улучшение конверсии, рост числа заявок и прозрачное представление услуг компании.</p>
+                                      </div>
+                                    </div>
+                            </div>
+                            <div class="tabs-v__content-item" data-tabs-content="2">
+                                    <div class="cases__item">
+                                      <div class="cases__item-img img-cover"><img src="img/avtobum.png" alt="АвтоБум" lazyload="lazyload"/></div><a class="cases__item-title h3" href="https://avtobum-76.ru/" target="_blank">АвтоБум</a>
+                                      <div class="cases__item-desc">
+                                        <p class="text-c__accent"> Разработка сайтов и сервисов</p>
+                                        <p><span>Клиент:</span> Магазин автозапчастей «АвтоБум»</p>
+                                        <p><span>Задача:</span> Создание удобного и информативного сайта для привлечения клиентов и онлайн-продаж автозапчастей.</p>
+                                        <ul>
+                                          <li><span>Проделанная работа:</span></li>
+                                          <li>- Разработан структурированный сайт с акцентом на ассортимент (иномарки, ВАЗ, автохимия) и удобный поиск запчастей.</li>
+                                          <li>- Реализованы ключевые разделы: прайс, контакты, график работы и условия оплаты (наличные, карты, банковский перевод).</li>
+                                          <li>- Добавлены пользовательские элементы: форма обратной связи, карта проезда (ул. Чехова, 30), адаптация под мобильные устройства.</li>
+                                          <li>- Интеграция с офлайн-бизнесом: указаны телефоны для связи (+7 (4852) 390265) и актуальный адрес.</li>
+                                        </ul>
+                                        <p><span>Результат:</span> Улучшение онлайн-присутствия компании, рост конверсии заявок и упрощение взаимодействия с клиентами.</p>
+                                      </div>
+                                    </div>
+                            </div>
+                            <div class="tabs-v__content-item" data-tabs-content="3">
+                                    <div class="cases__item">
+                                      <div class="cases__item-img img-cover"><img src="img/euroautoservice.png" alt="Евро Авто Сервис" lazyload="lazyload"/></div><a class="cases__item-title h3" href="https://euroautoservice.by/" target="_blank">Евро Авто Сервис</a>
+                                      <div class="cases__item-desc">
+                                        <p class="text-c__accent"> Разработка сайтов и сервисов</p>
+                                        <p><span>Клиент:</span> ООО «ШАТЕ-М СЕРВИС» (разработчик платформы EuroAutoService)</p>
+                                        <p><span>Задача:</span> Создание многофункционального онлайн-сервиса для подключения СТО и упрощения поиска услуг для автовладельцев</p>
+                                        <ul>
+                                          <li><span>Проделанная работа:</span></li>
+                                          <li>- Реализован поиск СТО по параметрам (марка авто, тип услуги, регион) с фильтрацией предложений.</li>
+                                          <li>- Интеграция онлайн-записи на сервис и отображение актуальных прайсов партнёров.</li>
+                                          <li>- Создан программный продукт для СТО с возможностью управления заявками, клиентской базой и отчётами.</li>
+                                          <li>- Адаптивный дизайн для мобильных устройств.</li>
+                                          <li>- Форма обратной связи и поддержка клиентов (включая офлайн-помощь при отсутствии интернета).</li>
+                                          <li>- Реализовано автоматическое обновление пользовательских соглашений с уведомлением о изменениях.</li>
+                                          <li>- Защита данных: шифрование персональной информации и запрет на передачу учётных данных третьим лицам.</li>
+                                        </ul>
+                                        <p><span>Результат:</span> </p>
+                                        <ul>
+                                          <li>- Упрощение подключения СТО к цифровой экосистеме.</li>
+                                          <li>- Рост числа пользователей за счёт прозрачности услуг и удобства онлайн-записи.</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                            </div>
+                            <div class="tabs-v__content-item" data-tabs-content="4">
+                                    <div class="cases__item">
+                                      <div class="cases__item-img img-cover"><img src="img/atlantdom.png" alt="Атлант Дом" lazyload="lazyload"/></div><a class="cases__item-title h3" href="https://atlantdom.pro/" target="_blank">Атлант Дом</a>
+                                      <div class="cases__item-desc">
+                                        <p class="text-c__accent"> Разработка сайтов и сервисов</p>
+                                        <p><span>Клиент:</span> Компания «Атлант Дом» (проектирование и строительство премиальных домов под ключ в Москве и Московской области)</p>
+                                        <p><span>Задача:</span> Создание современного и интерактивного интерфейса для презентации услуг компании</p>
+                                        <ul>
+                                          <li><span>Проделанная работа (Frontend):</span></li>
+                                          <li>- Полноценная адаптация под все устройства (мобильные, планшеты, десктоп)</li>
+                                          <li>- Оптимизированная скорость загрузки страниц</li>
+                                          <li>- Разработка калькулятора стоимости строительства</li>
+                                          <li>- Реализация форм обратной связи с валидацией</li>
+                                          <li>- Создание интуитивной навигации по разделам</li>
+                                          <li>- Современный дизайн с анимациями переходов</li>
+                                          <li>- Визуализация этапов строительства</li>
+                                          <li>- Галерея реализованных проектов с удобным просмотром</li>
+                                        </ul>
+                                        <p><span>Результат:</span> Создан современный, удобный и функциональный интерфейс.</p>
+                                      </div>
+                                    </div>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="tabs-v__tabs ani_fadeInRight opacity-0">
+                    <div class="tabs-v__tabs-item active" data-tabs-title="1">Колор-Мет</div>
+                    <div class="tabs-v__tabs-item" data-tabs-title="2">АвтоБум</div>
+                    <div class="tabs-v__tabs-item" data-tabs-title="3">Евро Авто Сервис</div>
+                    <div class="tabs-v__tabs-item" data-tabs-title="4">Атлант Дом</div>
+                  </div>
+                </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="container">
         <div class="footer-wrapper">
-          <div class="footer-logo"><img src="./img/basalt-icon.svg" alt="Basalt Code"/></div>
+          <div class="footer-logo"><img src="img/basalt-icon.svg" alt="Basalt Code"/></div>
           <div class="footer-col">
             <ul>
-              <li><a href="#">о нас</a></li>
-              <li><a href="#">команда</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#team">Команда</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <ul>
-              <li><a href="#">услуги</a></li>
-              <li><a href="#">кейсы</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#cases">Кейсы</a></li>
             </ul>
           </div>
         </div>
-      </div><img class="footer-bg footer-bg opacity-0 ani_jackInTheBox" src="./img/footer-basalt.svg" alt="footer-bg"/>
+      </div><img class="footer-bg footer-bg opacity-0 ani_jackInTheBox" src="img/footer-basalt.svg" alt="footer-bg"/>
     </footer>
+    <div class="modal-wrapper" data-modal-block="send-request">
+      <div class="modal-content">
+        <div class="msend-request">
+          <div class="modal-title h3">Оставить заявку</div>
+          <form class="bc-form">
+            <div class="msend-request__top">
+              <input type="text" name="name" placeholder="Имя" required="required"/>
+              <input type="phone" name="phone" placeholder="+7 (000) 000-00-00" required="required"/>
+              <input type="text" name="telegram" placeholder="Telegram: @username"/>
+              <select name="service" placeholder="Выберите услугу" required="required">
+                <option value="" disabled="disabled" selected="selected">Выберите услугу</option>
+                <option value="site">Разработка сайтов и сервисов</option>
+                <option value="mobile">Разработка мобильных приложений</option>
+                <option value="design">UX/UI дизайн</option>
+                <option value="bot">Telegram-боты</option>
+                <option value="web-app">Веб-приложения</option>
+                <option value="crm">CRM-системы</option>
+                <option value="games">Создание игр на Unreal Engine</option>
+              </select>
+            </div>
+            <button class="btn--accent msend-request__button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/animate.min.js"></script>
     <script src="./js/main.js"></script>

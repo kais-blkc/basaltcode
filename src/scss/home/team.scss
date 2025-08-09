@@ -48,15 +48,11 @@
     transition: var(--trans-02s);
     word-break: break-all;
     &:hover {
-      background-color: var(--accent-hover);
+      background-color: var(--accent);
     }
 
     @media (max-width: 768px) {
       min-height: 50px;
-    }
-
-    &.team {
-      backdrop-filter: brightness(0.5);
     }
   }
 }

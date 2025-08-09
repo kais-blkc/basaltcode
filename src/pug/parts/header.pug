@@ -5,12 +5,13 @@ header
 
 
     .navbar.d-none--tablet.d-none--mob
-      a(href="#about").navbar__item о нас 
-      a(href="#team").navbar__item команда
-      a(href="#services").navbar__item услуги
+      a(href="#about").navbar__item О нас 
+      a(href="#team").navbar__item Команда
+      a(href="#services").navbar__item Услуги
+      a(href="#cases").navbar__item Кейсы
 
     .request.d-none--tablet.d-none--mob
-      a(href="#request").btn.btn--target.clickable-scale Оставить заявку
+      a(href="#request" data-modal-open="send-request").btn.btn--target.clickable-scale Оставить заявку
 
     .burger.d-none--desc(data-modal-open="header-mobile")
       .burger__line
@@ -24,11 +25,12 @@ header
 
 
     .navbar.navbar--vertical
-      a(href="#about" data-modal-close="header-mobile").navbar__item о нас 
-      a(href="#team" data-modal-close="header-mobile").navbar__item команда
-      a(href="#services" data-modal-close="header-mobile").navbar__item услуги
+      a(href="#about" data-modal-close="header-mobile").navbar__item О нас 
+      a(href="#team" data-modal-close="header-mobile").navbar__item Команда
+      a(href="#services" data-modal-close="header-mobile").navbar__item Услуги
+      a(href="#services" data-modal-close="header-mobile").navbar__item Кейсы
 
     .request
-      a(href="#request").btn.btn--target.clickable-scale Оставить заявку
+      a(href="#request" data-modal-open="send-request" data-modal-close="header-mobile").btn.btn--target.clickable-scale Оставить заявку
 
       

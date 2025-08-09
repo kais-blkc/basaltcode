@@ -35,7 +35,7 @@ const paths = {
     css: `${source_folder}/css/**/*.css`,
     js: `${source_folder}/js/*.js`,
     jsCopy: `${source_folder}/jsCopy/*.js`,
-    img: `${source_folder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
+    img: `${source_folder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
     fonts: `${source_folder}/fonts/*.ttf`,
     libs: `${source_folder}/libs/**/*`,
   },
@@ -100,7 +100,7 @@ function copyJS() {
 }
 
 function img() {
-  return src(paths.src.img).pipe(dest(paths.build.img)).pipe(bs.stream());
+  return src(paths.src.img, { encoding: false }).pipe(dest(paths.build.img));
 }
 
 function fonts() {

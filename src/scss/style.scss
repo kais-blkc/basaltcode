@@ -5,9 +5,14 @@
 @forward './parts/general.scss';
 @forward './parts/header.scss';
 @forward './parts/footer.scss';
+@forward './parts/modals.scss';
+
+// Mixins
+@forward './parts/mixins/tabs-vertical.scss';
 
 // Home styles
 @forward './home/banner.scss';
 @forward './home/about-us.scss';
 @forward './home/team.scss';
 @forward './home/services.scss';
+@forward './home/cases.scss';

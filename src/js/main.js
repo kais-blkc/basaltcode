@@ -13,9 +13,9 @@ btnCloseModal.forEach((btn) => {
 
 modals.forEach((modal) => {
   modal.addEventListener('click', (e) => {
+    console.log(e.target.className);
     if (e.target.className.includes('modal-wrapper')) {
       modal.classList.remove('active');
-      document.body.classList.remove('scroll-off');
     }
   });
 });
@@ -28,16 +28,6 @@ function toggleModalClass() {
     ) {
       block.classList.toggle('active');
       this.classList.toggle('active');
-
-      // If state active hide body scroll
-      if (
-        block.className.includes('active') &&
-        block.className.includes('modal')
-      ) {
-        document.body.classList.add('scroll-off');
-      } else {
-        document.body.classList.remove('scroll-off');
-      }
     }
   });
 }
@@ -61,8 +51,6 @@ scrollHeader();
 /* ========== TABS ========== */
 function tabs() {
   const tabs = document.querySelectorAll('[data-tabs]');
-  // const tabsItems = document.querySelectorAll('.tabs__item');
-  // const tabsContent = document.querySelectorAll('.tabs__content');
 
   tabs.forEach((tab) => {
     const tabsItems = tab.querySelectorAll('[data-tabs-title]');

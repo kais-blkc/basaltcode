@@ -1,0 +1,21 @@
+.modal-wrapper(data-modal-block="send-request")
+  .modal-content
+    .msend-request
+      .modal-title.h3 Оставить заявку
+
+      form.bc-form
+        .msend-request__top
+          input(type="text" name="name" placeholder="Имя" required=true)
+          input(type="phone" name="phone" placeholder="+7 (000) 000-00-00" required=true)
+          input(type="text" name="telegram" placeholder="Telegram: @username")
+          select(name="service" placeholder="Выберите услугу" required=true)
+            option(value="" disabled selected) Выберите услугу
+            option(value="site") Разработка сайтов и сервисов
+            option(value="mobile") Разработка мобильных приложений
+            option(value="design") UX/UI дизайн
+            option(value="bot") Telegram-боты
+            option(value="web-app") Веб-приложения
+            option(value="crm") CRM-системы
+            option(value="games") Создание игр на Unreal Engine
+
+        button.btn--accent.msend-request__button Отправить

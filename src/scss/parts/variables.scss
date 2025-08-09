@@ -2,14 +2,16 @@
   /* Background Colors */
   --frame-background: #0e0e0e;
   --button-background: #191919;
+  --input-bg: color-mix(in srgb, #fff 20%, transparent);
+  --input-bg-hover: color-mix(in srgb, #fff 40%, transparent);
 
   /* Accent Colors */
-  --accent: #081fe3;
-  --accent-hover: #0719bc;
+  --accent: #4958e0;
+  --accent-hover: #2d378d;
   --accent-secondary: #b7bfff;
 
   /* Text Colors */
-  --white: #ffffff;
+  --white: #f0f0f0;
   --text-secondary: #929292;
 
   /* Additional Colors */
@@ -17,7 +19,8 @@
   --additionally-2: #6f2a00;
 
   /* Border/Stroke Color */
-  --stroke: #1b1b1b;
+  --stroke: #212121;
+  --stroke-hover: #363636;
 
   --trans-02s: all 0.2s ease;
   --trans-03s: all 0.3s ease;
