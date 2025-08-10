@@ -49,6 +49,9 @@
     word-break: break-all;
     &:hover {
       background-color: var(--accent);
+      .sec-team__item-subtitle {
+        color: var(--white);
+      }
     }
     @media (max-width: 768px) {
       min-height: 50px;
@@ -56,6 +59,10 @@
 
     &.ceo {
       height: 100%;
+    }
+
+    &-subtitle {
+      transition: all 0.3s ease-out;
     }
   }
 }

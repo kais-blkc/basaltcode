@@ -922,32 +922,8 @@ footer .footer-bg {
   top: -1%;
 }
 
-@-webkit-keyframes banner-bg {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes banner-bg {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+.sec-banner__content-text {
+  text-transform: uppercase;
 }
 
 .sec-about-us__wrapper {
@@ -1009,8 +985,17 @@ footer .footer-bg {
   background-color: var(--accent);
 }
 
+.sec-team__item:hover .sec-team__item-subtitle {
+  color: var(--white);
+}
+
 .sec-team__item.ceo {
   height: 100%;
+}
+
+.sec-team__item-subtitle {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 @-webkit-keyframes circle-pulse {
@@ -1265,6 +1250,7 @@ footer .footer-bg {
   .tabs-v__tabs-item {
     padding: 14px;
     font-size: 18px;
+    border-radius: 12px;
   }
 
   .sec-banner__content {
@@ -1390,13 +1376,13 @@ footer .footer-bg {
 
 @media (max-width: 500px) {
   .banner-text {
-    font-size: 38px;
+    font-size: 30px;
   }
 }
 
 @media (max-width: 360px) {
   .banner-text {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
