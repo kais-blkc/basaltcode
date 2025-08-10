@@ -827,6 +827,9 @@ footer .footer-bg {
   transition: var(--trans-02s);
   cursor: pointer;
   border-radius: 24px;
+  color: var(--white);
+  border: none;
+  text-align: inherit;
 }
 
 .tabs-v__tabs-item:hover {

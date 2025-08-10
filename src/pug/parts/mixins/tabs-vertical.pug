@@ -20,5 +20,5 @@ mixin tabs-v(titles, rtl=false)
       .tabs-v__tabs.ani_fadeInRight.opacity-0
         each title, index in titles
           - var isActive = index == 0 ? 'active' : ''
-          .tabs-v__tabs-item(data-tabs-title=index+1 class=isActive)!=title
+          button.tabs-v__tabs-item(data-tabs-title=index+1 class=isActive)!=title
 
