@@ -2,7 +2,7 @@ include ../parts/mixins/tabs-vertical.pug
 
 mixin slmi(img, title)
   .sec-services__item.ani_fadeInUp.opacity-0
-    img(src=img, alt="")
+    img(src=img, alt="", loading="lazy")
     .sec-services__item-title=title
 
 -
@@ -16,7 +16,7 @@ mixin slmi(img, title)
 mixin casesItem(title, link, img)
   .cases__item
     .cases__item-img.img-cover
-      img(src=img, alt=title, lazyload=true)
+      img(src=img, alt=title, loading="lazy")
     a(href=link target="_blank").cases__item-title.h3!=title
     .cases__item-desc
       block

@@ -3,7 +3,7 @@ include ../parts/mixins/tabs-vertical.pug
 mixin slmi(img, title)
   div(data-aos="fade-in-up")
     .sec-services__item
-      img(src=img, alt="")
+      img(src=img, alt="", loading="lazy")
       .sec-services__item-title=title
 
 -
@@ -36,7 +36,7 @@ section#services.sec-services.sec-padding-y
         each img, index in images
           +tabs-v-content(index+1, index == 0)
             .sec-services__img.block-absolute.img-cover
-              img(src=img, alt="")
+              img(src=img, alt="" loading="lazy")
 
     .sec-services__list-mob
       +slmi('img/service-site.png', 'Разработка сайтов и сервисов')
