@@ -1,9 +1,10 @@
 include ../parts/mixins/tabs-vertical.pug
 
 mixin slmi(img, title)
-  .sec-services__item.ani_fadeInUp.opacity-0
-    img(src=img, alt="")
-    .sec-services__item-title=title
+  div(data-aos="fade-in-up")
+    .sec-services__item
+      img(src=img, alt="")
+      .sec-services__item-title=title
 
 -
   var titles = [
@@ -28,7 +29,7 @@ mixin slmi(img, title)
 
 section#services.sec-services.sec-padding-y
   .container
-    h2.h2.ani_fadeInDown.opacity-0 Наши услуги
+    h2.h2(data-aos="fade-up") Наши услуги
 
     .d-none--mob
       +tabs-v(titles)

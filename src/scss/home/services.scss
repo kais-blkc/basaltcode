@@ -35,12 +35,14 @@
     z-index: 1;
     border-radius: 24px;
     overflow: hidden;
-    min-height: 345px;
+    min-height: 125px;
+    transition: var(--trans-03s);
 
     &:hover {
       .sec-services__item-title {
         background-color: var(--accent);
       }
+      min-height: 345px;
     }
 
     img {
@@ -61,7 +63,7 @@
       justify-content: center;
       background-color: var(--button-background);
       transition: var(--trans-02s);
-      padding: 16px 20px;
+      padding: 16px 16px;
       text-align: center;
     }
   }

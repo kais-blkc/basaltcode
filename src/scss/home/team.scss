@@ -45,14 +45,17 @@
   }
   &__item {
     min-height: 200px;
-    transition: var(--trans-02s);
+    transition: all 0.3s ease-out;
     word-break: break-all;
     &:hover {
       background-color: var(--accent);
     }
-
     @media (max-width: 768px) {
       min-height: 50px;
+    }
+
+    &.ceo {
+      height: 100%;
     }
   }
 }

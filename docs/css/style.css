@@ -897,6 +897,8 @@ footer .footer-bg {
   top: 0;
   z-index: -1;
   border-radius: inherit;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 .sec-banner__content-img img {
@@ -998,13 +1000,17 @@ footer .footer-bg {
 
 .sec-team__item {
   min-height: 200px;
-  -webkit-transition: var(--trans-02s);
-  transition: var(--trans-02s);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   word-break: break-all;
 }
 
 .sec-team__item:hover {
   background-color: var(--accent);
+}
+
+.sec-team__item.ceo {
+  height: 100%;
 }
 
 @-webkit-keyframes circle-pulse {
@@ -1080,6 +1086,12 @@ footer .footer-bg {
   z-index: 1;
   border-radius: 24px;
   overflow: hidden;
+  min-height: 125px;
+  -webkit-transition: var(--trans-03s);
+  transition: var(--trans-03s);
+}
+
+.sec-services__item:hover {
   min-height: 345px;
 }
 
@@ -1113,7 +1125,7 @@ footer .footer-bg {
   background-color: var(--button-background);
   -webkit-transition: var(--trans-02s);
   transition: var(--trans-02s);
-  padding: 16px 20px;
+  padding: 16px 16px;
   text-align: center;
 }
 
@@ -1165,6 +1177,10 @@ footer .footer-bg {
   -webkit-transform: scale(0.98);
       -ms-transform: scale(0.98);
           transform: scale(0.98);
+}
+
+.sec-cases {
+  scroll-padding-top: 100px;
 }
 
 .sec-cases .tabs-v__content-item {
@@ -1266,6 +1282,7 @@ footer .footer-bg {
   }
 
   .sec-cases .tabs-v__list {
+    opacity: 1 !important;
     grid-template-columns: 1fr;
   }
 

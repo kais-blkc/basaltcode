@@ -1,3 +1,14 @@
+/* ========== AOS ========== */
+if (!AOS) {
+  console.warn('AOS not found');
+} else {
+  AOS.init({
+    delay: 100,
+    duration: 600,
+  });
+}
+/* ========== END AOS ========== */
+
 /* ========== MODAL LOGIC ========== */
 let btnOpenModal = document.querySelectorAll('*[data-modal-open]');
 const btnCloseModal = document.querySelectorAll('*[data-modal-close]');

@@ -1,5 +1,5 @@
 mixin tabs-v-mobile(img, title)
-  .sec-services__item.ani_fadeInUp.opacity-0
+  .sec-services__item(data-aos="fade-in-up")
     img(src=img, alt="")
     .sec-services__item-title=title
 
@@ -13,11 +13,12 @@ mixin tabs-v(titles, rtl=false)
   - var rtl = rtl ? 'rtl' : ''
   .tabs-v
     .tabs-v__list(data-tabs class=rtl)
-      .tabs-v__list-left.ani_fadeInLeft.opacity-0
+      .tabs-v__list-left(data-aos="fade-right", data-aos-delay="400")
         .tabs-v__content
           block 
 
-      .tabs-v__tabs.ani_fadeInRight.opacity-0
+      //- .tabs-v__tabs.animate__animated.animate__fadeInRight
+      .tabs-v__tabs(data-aos="fade-left" data-aos-delay="400")
         each title, index in titles
           - var isActive = index == 0 ? 'active' : ''
           button.tabs-v__tabs-item(data-tabs-title=index+1 class=isActive)!=title

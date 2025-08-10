@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Basalt Code</title>
     <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <link rel="stylesheet" href="./css/aos.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&amp;family=Onest:wght@100..900&amp;display=swap"/>
@@ -34,21 +34,21 @@
       <section class="sec-banner">
         <div class="container">
           <div class="sec-banner__content animate__animated animate__fadeIn">
-            <div class="sec-banner__content-img img-cover" style="background-image: url(img/banner.png)"><img src="img/banner.png" alt=""/></div>
-            <div class="sec-banner__content-text banner-text">Мы создаем креативные <br class="d-none--tablet"> цифровые продукты</div>
+            <div class="sec-banner__content-img img-cover" style="background-image: url(img/banner.png)" data-aos="fade-in"><img src="img/banner.png" alt=""/></div>
+            <div class="sec-banner__content-text banner-text" data-aos="fade-in" data-aos-delay="600">Мы создаем креативные <br class="d-none--tablet"> цифровые продукты</div>
           </div>
         </div>
       </section>
       <section class="sec-about-us sec-padding-y" id="about">
         <div class="container">
-          <div class="sec-about-us__wrapper ani_fadeIn opacity-0">
+          <div class="sec-about-us__wrapper" data-aos="fade-up">
             <div class="sec-about-us__title box-title --top">
               <h2 class="h2">О нас</h2>
             </div>
             <div class="sec-about-us__desc box-desc text-c__secondary">
               <p>Мы — команда увлеченных людей, которые любят создавать крутые цифровые решения.</p>
-              <p>Делаем продукты, которые работают: <span class="text-c__white ani_fadeIn opacity-0 animate__delay-1s">просто, удобно и красиво</span>. Для нас важно, чтобы всё было понятно и вам, и вашим клиентам. Мы за честность и прямоту — если что-то можно сделать лучше, мы об этом скажем.</p>
-              <p>Работая с нами, вы получите не просто исполнителей, а партнеров, которым можно доверять. Мы ценим простоту в общении и стремимся, чтобы <span class="text-c__white ani_fadeIn opacity-0 animate__delay-1s">весь процесс был максимально комфортным и эффективным</span>. <br/> Будем рады создать для вас сайт, который понравится и вам, и вашим клиентам!</p>
+              <p>Делаем продукты, которые работают: <span class="text-c__white">просто, удобно и красиво</span>. Для нас важно, чтобы всё было понятно и вам, и вашим клиентам. Мы за честность и прямоту — если что-то можно сделать лучше, мы об этом скажем.</p>
+              <p>Работая с нами, вы получите не просто исполнителей, а партнеров, которым можно доверять. Мы ценим простоту в общении и стремимся, чтобы <span class="text-c__white">весь процесс был максимально комфортным и эффективным</span>. <br/> Будем рады создать для вас сайт, который понравится и вам, и вашим клиентам!</p>
             </div>
           </div>
         </div>
@@ -57,39 +57,49 @@
         <div class="gradient-circle"></div>
         <div class="container">
           <div class="sec-team__wrapper">
-            <div class="sec-team__item box-title --top-right --bg team ani_backInRight opacity-0" style="grid-area: team;"><img src="img/team-bg.png" alt="" lazyload="lazyload"/>
+            <div class="sec-team__item box-title --top-right --bg team" style="grid-area: team;" data-aos="zoom-in-left"><img src="img/team-bg.png" alt="" lazyload="lazyload"/>
               <div class="h2">Команда</div>
             </div>
-                  <div class="sec-team__item box-title --bottom-left ceo ani_backInUp opacity-0" style="grid-area: ceo">
-                    <div class="sec-team__item-subtitle text-c__secondary">Мансур</div>
-                    <div class="sec-team__item-title h3">CEO</div>
+                  <div style="grid-area: ceo" data-aos="zoom-in-right" data-aos-delay="100">
+                    <div class="sec-team__item box-title --bottom-left ceo">
+                      <div class="sec-team__item-subtitle text-c__secondary">Мансур</div>
+                      <div class="sec-team__item-title h3">CEO</div>
+                    </div>
                   </div>
-                  <div class="sec-team__item box-title --bottom-left frontend ani_backInUp opacity-0" style="grid-area: frontend">
-                    <div class="sec-team__item-subtitle text-c__secondary">Мухаммадсалам, Насир, Султан</div>
-                    <div class="sec-team__item-title h3">Фронтендеры</div>
+                  <div style="grid-area: frontend" data-aos="zoom-in-right" data-aos-delay="100">
+                    <div class="sec-team__item box-title --bottom-left frontend">
+                      <div class="sec-team__item-subtitle text-c__secondary">Мухаммадсалам, Насир, Султан</div>
+                      <div class="sec-team__item-title h3">Фронтендеры</div>
+                    </div>
                   </div>
-                  <div class="sec-team__item box-title --bottom-left design ani_backInUp opacity-0" style="grid-area: design">
-                    <div class="sec-team__item-subtitle text-c__secondary">Али</div>
-                    <div class="sec-team__item-title h3">Дизайн</div>
+                  <div style="grid-area: design" data-aos="zoom-in-right" data-aos-delay="100">
+                    <div class="sec-team__item box-title --bottom-left design">
+                      <div class="sec-team__item-subtitle text-c__secondary">Али</div>
+                      <div class="sec-team__item-title h3">Дизайн</div>
+                    </div>
                   </div>
-                  <div class="sec-team__item box-title --bottom-left projects ani_backInUp opacity-0" style="grid-area: projects">
-                    <div class="sec-team__item-subtitle text-c__secondary">Тимур, Юнус</div>
-                    <div class="sec-team__item-title h3">Проджекты</div>
+                  <div style="grid-area: projects" data-aos="zoom-in-right" data-aos-delay="100">
+                    <div class="sec-team__item box-title --bottom-left projects">
+                      <div class="sec-team__item-subtitle text-c__secondary">Тимур, Юнус</div>
+                      <div class="sec-team__item-title h3">Проджекты</div>
+                    </div>
                   </div>
-                  <div class="sec-team__item box-title --bottom-left backend ani_backInUp opacity-0" style="grid-area: backend">
-                    <div class="sec-team__item-subtitle text-c__secondary">Ринат</div>
-                    <div class="sec-team__item-title h3">Бэкендеры</div>
+                  <div style="grid-area: backend" data-aos="zoom-in-right" data-aos-delay="100">
+                    <div class="sec-team__item box-title --bottom-left backend">
+                      <div class="sec-team__item-subtitle text-c__secondary">Ринат</div>
+                      <div class="sec-team__item-title h3">Бэкендеры</div>
+                    </div>
                   </div>
           </div>
         </div>
       </section>
       <section class="sec-services sec-padding-y" id="services">
         <div class="container">
-          <h2 class="h2 ani_fadeInDown opacity-0">Наши услуги</h2>
+          <h2 class="h2" data-aos="fade-up">Наши услуги</h2>
           <div class="d-none--mob">
                   <div class="tabs-v">
                     <div class="tabs-v__list" data-tabs="data-tabs">
-                      <div class="tabs-v__list-left ani_fadeInLeft opacity-0">
+                      <div class="tabs-v__list-left" data-aos="fade-right" data-aos-delay="400">
                         <div class="tabs-v__content">
                                 <div class="tabs-v__content-item active" data-tabs-content="1">
                                   <div class="sec-services__img block-absolute img-cover"><img src="img/service-site.png" alt=""/></div>
@@ -114,7 +124,7 @@
                                 </div>
                         </div>
                       </div>
-                      <div class="tabs-v__tabs ani_fadeInRight opacity-0">
+                      <div class="tabs-v__tabs" data-aos="fade-left" data-aos-delay="400">
                         <button class="tabs-v__tabs-item active" data-tabs-title="1">Разработка сайтов и сервисов</button>
                         <button class="tabs-v__tabs-item" data-tabs-title="2">Разработка мобильных приложений</button>
                         <button class="tabs-v__tabs-item" data-tabs-title="3">UX/UI дизайн</button>
@@ -127,36 +137,50 @@
                   </div>
           </div>
           <div class="sec-services__list-mob">
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-site.png" alt=""/>
-                    <div class="sec-services__item-title">Разработка сайтов и сервисов</div>
+                  <div data-aos="fade-in-up">
+                    <div class="sec-services__item"><img src="img/service-site.png" alt=""/>
+                      <div class="sec-services__item-title">Разработка сайтов и сервисов</div>
+                    </div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-mobile.png" alt=""/>
-                    <div class="sec-services__item-title">Разработка мобильных приложений</div>
+                  <div data-aos="fade-in-up">
+                    <div class="sec-services__item"><img src="img/service-mobile.png" alt=""/>
+                      <div class="sec-services__item-title">Разработка мобильных приложений</div>
+                    </div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-design.png" alt=""/>
-                    <div class="sec-services__item-title">UX/UI дизайн</div>
+                  <div data-aos="fade-in-up">
+                    <div class="sec-services__item"><img src="img/service-design.png" alt=""/>
+                      <div class="sec-services__item-title">UX/UI дизайн</div>
+                    </div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-bot.png" alt=""/>
-                    <div class="sec-services__item-title">Telegram-боты</div>
+                  <div data-aos="fade-in-up">
+                    <div class="sec-services__item"><img src="img/service-bot.png" alt=""/>
+                      <div class="sec-services__item-title">Telegram-боты</div>
+                    </div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-web-app.png" alt=""/>
-                    <div class="sec-services__item-title">Веб-приложения</div>
+                  <div data-aos="fade-in-up">
+                    <div class="sec-services__item"><img src="img/service-web-app.png" alt=""/>
+                      <div class="sec-services__item-title">Веб-приложения</div>
+                    </div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-crm.png" alt=""/>
-                    <div class="sec-services__item-title">CRM-системы</div>
+                  <div data-aos="fade-in-up">
+                    <div class="sec-services__item"><img src="img/service-crm.png" alt=""/>
+                      <div class="sec-services__item-title">CRM-системы</div>
+                    </div>
                   </div>
-                  <div class="sec-services__item ani_fadeInUp opacity-0"><img src="img/service-games.png" alt=""/>
-                    <div class="sec-services__item-title">Создание игр на Unreal Engine</div>
+                  <div data-aos="fade-in-up">
+                    <div class="sec-services__item"><img src="img/service-games.png" alt=""/>
+                      <div class="sec-services__item-title">Создание игр на Unreal Engine</div>
+                    </div>
                   </div>
           </div>
         </div>
       </section>
       <section class="sec-cases sec-padding-y" id="cases">
         <div class="container df-gap-col-20">
-          <h2 class="h2 ani_fadeInDown opacity-0">Кейсы</h2>
+          <h2 class="h2" data-aos="fade-up">Кейсы</h2>
                 <div class="tabs-v">
                   <div class="tabs-v__list rtl" data-tabs="data-tabs">
-                    <div class="tabs-v__list-left ani_fadeInLeft opacity-0">
+                    <div class="tabs-v__list-left" data-aos="fade-right" data-aos-delay="400">
                       <div class="tabs-v__content">
                               <div class="tabs-v__content-item active" data-tabs-content="1">
                                       <div class="cases__item">
@@ -244,7 +268,7 @@
                               </div>
                       </div>
                     </div>
-                    <div class="tabs-v__tabs ani_fadeInRight opacity-0">
+                    <div class="tabs-v__tabs" data-aos="fade-left" data-aos-delay="400">
                       <button class="tabs-v__tabs-item active" data-tabs-title="1">Колор-Мет</button>
                       <button class="tabs-v__tabs-item" data-tabs-title="2">АвтоБум</button>
                       <button class="tabs-v__tabs-item" data-tabs-title="3">Евро Авто Сервис</button>
@@ -272,7 +296,7 @@
             </ul>
           </div>
         </div>
-      </div><img class="footer-bg footer-bg opacity-0 ani_jackInTheBox" src="img/footer-basalt.svg" alt="footer-bg"/>
+      </div><img class="footer-bg footer-bg" src="img/footer-basalt.svg" alt="footer-bg" data-aos="flip-down"/>
     </footer>
     <div class="modal-wrapper" data-modal-block="send-request">
       <div class="modal-content">
@@ -300,7 +324,7 @@
       </div>
     </div>
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/animate.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

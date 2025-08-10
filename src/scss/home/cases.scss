@@ -1,7 +1,10 @@
 .sec-cases {
+  scroll-padding-top: 100px;
+
   .tabs-v {
     @media (max-width: 1024px) {
       &__list {
+        opacity: 1 !important;
         grid-template-columns: 1fr;
         &-left {
           order: 2;
@@ -11,6 +14,9 @@
       &__tabs {
         text-align: center;
       }
+    }
+
+    @media (max-width: 768px) {
     }
 
     &__content-item {
