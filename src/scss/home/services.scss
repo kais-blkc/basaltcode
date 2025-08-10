@@ -105,22 +105,4 @@
       }
     }
   }
-
-  *[data-tabs] {
-    *[data-tabs-content] {
-      display: block;
-      opacity: 0;
-      max-height: 0;
-      overflow: hidden;
-      visibility: hidden;
-      transition: var(--trans-05s);
-      height: 100%;
-
-      &.active {
-        opacity: 1;
-        max-height: 1000px;
-        visibility: visible;
-      }
-    }
-  }
 }

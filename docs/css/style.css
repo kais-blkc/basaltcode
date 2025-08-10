@@ -806,7 +806,6 @@ footer .footer-bg {
 
 .tabs-v__content-item {
   overflow: hidden;
-  position: relative;
 }
 
 .tabs-v__tabs {
@@ -852,6 +851,7 @@ footer .footer-bg {
   visibility: hidden;
   -webkit-transition: var(--trans-05s);
   transition: var(--trans-05s);
+  position: relative;
   height: 100%;
 }
 
@@ -859,6 +859,7 @@ footer .footer-bg {
   opacity: 1;
   max-height: 1000px;
   visibility: visible;
+  height: 100%;
 }
 
 .sec-banner {
@@ -1163,25 +1164,9 @@ footer .footer-bg {
           transform: scale(0.98);
 }
 
-.sec-services *[data-tabs] *[data-tabs-content] {
-  display: block;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  -webkit-transition: var(--trans-05s);
-  transition: var(--trans-05s);
-  height: 100%;
-}
-
-.sec-services *[data-tabs] *[data-tabs-content].active {
-  opacity: 1;
-  max-height: 1000px;
-  visibility: visible;
-}
-
-.sec-cases {
-  scroll-padding-top: 100px;
+.sec-cases .tabs-v__content-item {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .cases__item {
@@ -1256,6 +1241,11 @@ footer .footer-bg {
 
   .tabs-v__list-left {
     min-height: 400px;
+  }
+
+  .tabs-v__tabs-item {
+    padding: 14px;
+    font-size: 18px;
   }
 
   .sec-banner__content {

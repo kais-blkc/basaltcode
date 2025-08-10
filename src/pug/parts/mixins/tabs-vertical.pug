@@ -11,13 +11,14 @@ mixin tabs-v-content(index, active)
 
 mixin tabs-v(titles, rtl=false)
   - var rtl = rtl ? 'rtl' : ''
-  .tabs-v__list(data-tabs class=rtl)
-    .tabs-v__list-left.ani_fadeInLeft.opacity-0
-      .tabs-v__content
-        block 
+  .tabs-v
+    .tabs-v__list(data-tabs class=rtl)
+      .tabs-v__list-left.ani_fadeInLeft.opacity-0
+        .tabs-v__content
+          block 
 
-    .tabs-v__tabs.ani_fadeInRight.opacity-0
-      each title, index in titles
-        - var isActive = index == 0 ? 'active' : ''
-        .tabs-v__tabs-item(data-tabs-title=index+1 class=isActive)!=title
+      .tabs-v__tabs.ani_fadeInRight.opacity-0
+        each title, index in titles
+          - var isActive = index == 0 ? 'active' : ''
+          .tabs-v__tabs-item(data-tabs-title=index+1 class=isActive)!=title
 
