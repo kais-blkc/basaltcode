@@ -303,7 +303,7 @@
       <div class="modal-content">
         <div class="msend-request">
           <div class="modal-title h3">Оставить заявку</div>
-          <form class="bc-form">
+          <form class="bc-form" id="request-form">
             <div class="msend-request__top">
               <input type="text" name="name" placeholder="Имя" required="required"/>
               <input type="phone" name="phone" placeholder="+7 (000) 000-00-00" required="required"/>
@@ -322,6 +322,7 @@
             <button class="btn--accent msend-request__button">Отправить</button>
           </form>
         </div>
+        <div class="request-form-result" id="request-form-result">TEST MESSAGE</div>
       </div>
     </div>
     <script src="./js/jquery.min.js"></script>

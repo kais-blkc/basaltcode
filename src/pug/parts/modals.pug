@@ -3,7 +3,7 @@
     .msend-request
       .modal-title.h3 Оставить заявку
 
-      form.bc-form
+      form#request-form.bc-form
         .msend-request__top
           input(type="text" name="name" placeholder="Имя" required=true)
           input(type="phone" name="phone" placeholder="+7 (000) 000-00-00" required=true)
@@ -19,3 +19,5 @@
             option(value="games") Создание игр на Unreal Engine
 
         button.btn--accent.msend-request__button Отправить
+
+    #request-form-result.request-form-result TEST MESSAGE

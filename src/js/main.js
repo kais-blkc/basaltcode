@@ -92,3 +92,31 @@ function tabs() {
 }
 tabs();
 /* ========== END TABS ========== */
+
+/* ========== SEND REQUEST FORM ========== */
+function sendRequestForm() {
+  const requestForm = document.querySelector('#request-form');
+
+  requestForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(requestForm);
+
+    let res = await fetch('php/send.php', {
+      method: 'POST',
+      body: formData,
+    });
+
+    const data = await res.json();
+
+    const resultForm = document.querySelector('#request-form-result');
+    resultForm.innerText = '✅ Заявка отправлена!';
+    resultForm.classList.add('active');
+    console.log(data);
+
+    if (data.ok) {
+      requestForm.reset(); // Очищаем форму
+    }
+  });
+}
+sendRequestForm();
+/* ========== END SEND REQUEST FORM ========== */

@@ -28,6 +28,7 @@ const paths = {
     fonts: `${project_folder}/fonts/`,
     libs: `${project_folder}/libs/`,
     favicon: `${project_folder}/`,
+    php: `${project_folder}/php/`,
   },
   src: {
     html: `${source_folder}/*.html`,
@@ -40,6 +41,7 @@ const paths = {
     fonts: `${source_folder}/fonts/*.ttf`,
     libs: `${source_folder}/libs/**/*`,
     favicon: `${source_folder}/favicons/**/*.{png,ico}`,
+    php: `${source_folder}/php/*.php`,
   },
   watch: {
     html: `${source_folder}/html/**/*.html`,
@@ -48,6 +50,7 @@ const paths = {
     js: `${source_folder}/js/**/*.js`,
     img: `${source_folder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
     favicon: `${source_folder}/favicons/**/*.{png,ico}`,
+    php: `${source_folder}/php/*.php`,
   },
   clean: project_folder,
 };
@@ -123,6 +126,10 @@ function otf2ttf() {
     .pipe(dest(`${source_folder}/fonts/`));
 }
 
+function php() {
+  return src(paths.src.php).pipe(dest(paths.build.php));
+}
+
 function watchFiles() {
   watch(paths.watch.pug, pugF);
   watch(paths.watch.scss, scssF);
@@ -132,9 +139,19 @@ function watchFiles() {
 
 const build = series(
   clearDist,
-  parallel(pugF, scssF, js, img, copyCSS, copyJS, favicon)
+  parallel(pugF, scssF, js, img, copyCSS, copyJS, favicon, php)
 );
 
 const dev = series(build, parallel(browserSyncStart, watchFiles));
 
-export { dev as default, build, img, copyCSS, copyJS, fonts, favicon, pugF };
+export {
+  dev as default,
+  build,
+  img,
+  copyCSS,
+  copyJS,
+  fonts,
+  favicon,
+  pugF,
+  php,
+};

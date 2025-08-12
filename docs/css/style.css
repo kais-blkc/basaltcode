@@ -347,7 +347,7 @@ a {
 .bc-form input {
   width: 100%;
   padding: 12px;
-  border-radius: 28px;
+  border-radius: 14px;
   font-size: 16px;
   text-align: center;
   border: none;
@@ -751,6 +751,27 @@ footer .footer-bg {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+
+.msend-request__button {
+  border-radius: 20px;
+}
+
+.request-form-result {
+  text-align: center;
+  padding: 0;
+  border-radius: 14px;
+  -webkit-transition: var(--trans-03s);
+  transition: var(--trans-03s);
+  opacity: 0;
+  max-height: 0px;
+}
+
+.request-form-result.active {
+  opacity: 1;
+  max-height: 200px;
+  padding: 10px 20px;
+  margin-top: 30px;
 }
 
 .tabs-v__list {
