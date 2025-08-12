@@ -109,7 +109,7 @@ function sendRequestForm() {
     const data = await res.json();
 
     const resultForm = document.querySelector('#request-form-result');
-    resultForm.innerText = '✅ Заявка отправлена!';
+    resultForm.innerText = data?.message;
     resultForm.classList.add('active');
     console.log(data);
 
