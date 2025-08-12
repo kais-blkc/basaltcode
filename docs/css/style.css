@@ -718,6 +718,30 @@ footer .footer-bg {
   gap: 50px;
 }
 
+.msend-request select option {
+  color: var(--frame-background);
+}
+
+.msend-request select option::-webkit-input-placeholder {
+  color: var(--frame-background);
+}
+
+.msend-request select option::-moz-placeholder {
+  color: var(--frame-background);
+}
+
+.msend-request select option:-ms-input-placeholder {
+  color: var(--frame-background);
+}
+
+.msend-request select option::-ms-input-placeholder {
+  color: var(--frame-background);
+}
+
+.msend-request select option::placeholder {
+  color: var(--frame-background);
+}
+
 .msend-request__top {
   display: -webkit-box;
   display: -ms-flexbox;

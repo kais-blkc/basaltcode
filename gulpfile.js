@@ -27,6 +27,7 @@ const paths = {
     img: `${project_folder}/img/`,
     fonts: `${project_folder}/fonts/`,
     libs: `${project_folder}/libs/`,
+    favicon: `${project_folder}/`,
   },
   src: {
     html: `${source_folder}/*.html`,
@@ -38,6 +39,7 @@ const paths = {
     img: `${source_folder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
     fonts: `${source_folder}/fonts/*.ttf`,
     libs: `${source_folder}/libs/**/*`,
+    favicon: `${source_folder}/favicons/**/*.{png,ico}`,
   },
   watch: {
     html: `${source_folder}/html/**/*.html`,
@@ -45,6 +47,7 @@ const paths = {
     scss: `${source_folder}/scss/**/*.scss`,
     js: `${source_folder}/js/**/*.js`,
     img: `${source_folder}/img/**/*.{jpg,png,svg,gif,ico,webp}`,
+    favicon: `${source_folder}/favicons/**/*.{png,ico}`,
   },
   clean: project_folder,
 };
@@ -103,6 +106,12 @@ function img() {
   return src(paths.src.img, { encoding: false }).pipe(dest(paths.build.img));
 }
 
+function favicon() {
+  return src(paths.src.favicon, { encoding: false }).pipe(
+    dest(paths.build.favicon)
+  );
+}
+
 function fonts() {
   src(paths.src.fonts).pipe(ttf2woff()).pipe(dest(paths.build.fonts));
   return src(paths.src.fonts).pipe(ttf2woff2()).pipe(dest(paths.build.fonts));
@@ -123,9 +132,9 @@ function watchFiles() {
 
 const build = series(
   clearDist,
-  parallel(pugF, scssF, js, img, copyCSS, copyJS)
+  parallel(pugF, scssF, js, img, copyCSS, copyJS, favicon)
 );
 
 const dev = series(build, parallel(browserSyncStart, watchFiles));
 
-export { dev as default, build, img, copyCSS, copyJS, fonts };
+export { dev as default, build, img, copyCSS, copyJS, fonts, favicon, pugF };
