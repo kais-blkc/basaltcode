@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import { deleteAsync } from 'del'; // Используем del для очистки папки dist
+import { deleteAsync } from 'del';
 import browserSync from 'browser-sync';
 import pug from 'gulp-pug';
 import * as dartSass from 'sass';
@@ -13,12 +13,11 @@ import ttf2woff from 'gulp-ttf2woff';
 import fonter from 'gulp-fonter';
 
 const project_folder = './docs';
-const source_folder = './src'; // Изменил на src, так как это более стандартное название
+const source_folder = './src';
 const { src, dest, series, parallel, watch } = gulp;
 const sass = gulpSass(dartSass);
 const bs = browserSync.create();
 
-/* Paths */
 const paths = {
   build: {
     html: `${project_folder}/`,
@@ -55,7 +54,6 @@ const paths = {
   clean: project_folder,
 };
 
-/* Funcs */
 function browserSyncStart() {
   bs.init({
     server: {
@@ -146,6 +144,7 @@ const dev = series(build, parallel(browserSyncStart, watchFiles));
 
 export {
   dev as default,
+  dev,
   build,
   img,
   copyCSS,

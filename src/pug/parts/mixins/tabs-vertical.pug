@@ -23,3 +23,25 @@ mixin tabs-v(titles, rtl=false)
           - var isActive = index == 0 ? 'active' : ''
           button.tabs-v__tabs-item(data-tabs-title=index+1 class=isActive)!=title
 
+mixin cases-slider-content(index, active, title, link, img)
+  - var isActive = active ? 'active' : ''
+  .cases-slider__content-item(data-tabs-content=index class=isActive)
+    .cases-slider__content-wrapper
+      .cases-slider__image-section
+        .cases-slider__image
+          img(src=img, alt=title, loading="lazy")
+        h3.cases-slider__title=title
+        a.cases-slider__link(href=link target="_blank") Посмотреть проект →
+      .cases-slider__description
+        .cases-slider__text
+          block
+
+mixin cases-slider(titles)
+  .cases-slider(data-tabs)
+    .cases-slider__tabs(data-aos="fade-up" data-aos-delay="200")
+      each title, index in titles
+        - var isActive = index == 0 ? 'active' : ''
+        button.cases-slider__tab(data-tabs-title=index+1 class=isActive)!=title
+    .cases-slider__content(data-aos="fade-up" data-aos-delay="400")
+      block
+

@@ -13,11 +13,314 @@
             option(value="site") Разработка сайтов и сервисов
             option(value="mobile") Разработка мобильных приложений
             option(value="design") UX/UI дизайн
-            option(value="bot") Telegram-боты
-            option(value="web-app") Веб-приложения
-            option(value="crm") CRM-системы
-            option(value="games") Создание игр на Unreal Engine
+            option(value="bot") Разработка ботов
+            option(value="support") Техническая поддержка
+            option(value="consultation") Консультации
 
         button.btn--accent.msend-request__button Отправить
 
     #request-form-result.request-form-result TEST MESSAGE
+
+.modal-wrapper(data-modal-block="express-landing")
+  .modal-content
+    .x-btn(data-modal-close="express-landing")
+    .mexpress-landing
+      form#express-landing-form.bc-form
+        .mexpress-landing__step.mexpress-landing__step--1.active
+          .modal-title.h3 Экспресс лендинг
+          .mexpress-landing__description
+            p Опишите необходимые вам блоки в форме ниже или просто нажмите 
+              a.mexpress-landing__next-link(href="#") "Далее"
+              |  — мы сделаем вам стандартный вариант, но всё будет красиво и профессионально.
+          .mexpress-landing__calculator
+            .mexpress-landing__item
+              label.mexpress-landing__checkbox-label
+                input(type="checkbox" name="header" checked)
+                span Хедер
+              input(type="text" name="header-name" placeholder="Опишите хедер или оставьте пустым" class="mexpress-landing__item-input")
+              .mexpress-landing__icons-wrapper
+                .mexpress-landing__edit-icon ✎
+                .mexpress-landing__tooltip-wrapper
+                  .mexpress-landing__tooltip-icon ?
+                  .mexpress-landing__tooltip-text Верхняя часть сайта с логотипом и кнопкой призыва к действию или контактами
+          
+            .mexpress-landing__blocks
+              - for (var i = 1; i <= 5; i++)
+                .mexpress-landing__block-row(data-block-type="base")
+                  label.mexpress-landing__checkbox-label
+                    input(type="checkbox" name=`block-${i}` class="block-checkbox" checked)
+                    span.mexpress-landing__block-title Блок #{i}
+                  .mexpress-landing__block-type-wrapper
+                    button.mexpress-landing__block-type-icon(type="button") ⚙
+                    .mexpress-landing__tooltip-wrapper
+                      .mexpress-landing__tooltip-icon ?
+                      .mexpress-landing__tooltip-text._right Выберите тип блока из списка или оставьте стандартное название. Мы сами подберем подходящий тип блока или обсудим с вами поздее.
+                    .mexpress-landing__block-type-dropdown
+                      button.mexpress-landing__block-type-option(type="button" data-type="") Блок #{i}
+                      button.mexpress-landing__block-type-option(type="button" data-type="about") О нас
+                      button.mexpress-landing__block-type-option(type="button" data-type="advantages") Преимущества
+                      button.mexpress-landing__block-type-option(type="button" data-type="reviews") Отзывы
+                      button.mexpress-landing__block-type-option(type="button" data-type="services") Услуги
+                      button.mexpress-landing__block-type-option(type="button" data-type="portfolio") Портфолио/Кейсы
+                      button.mexpress-landing__block-type-option(type="button" data-type="pricing") Цены/Тарифы
+                      button.mexpress-landing__block-type-option(type="button" data-type="contacts") Контакты
+                      button.mexpress-landing__block-type-option(type="button" data-type="form") Форма обратной связи
+                      button.mexpress-landing__block-type-option(type="button" data-type="faq") FAQ/Вопросы и ответы
+                      button.mexpress-landing__block-type-option(type="button" data-type="gallery") Галерея
+                      button.mexpress-landing__block-type-option(type="button" data-type="team") Команда
+                      button.mexpress-landing__block-type-option(type="button" data-type="blog") Блог/Новости
+                      button.mexpress-landing__block-type-option(type="button" data-type="stats") Статистика/Цифры
+                      button.mexpress-landing__block-type-option(type="button" data-type="modal") Модальное окно
+                      button.mexpress-landing__block-type-option(type="button" data-type="other") Другое
+                    input(type="hidden" name=`block-${i}-type` class="block-type-input" value="")
+                  input(type="text" name=`block-${i}-name` placeholder="Опишите блок" class="block-input")
+                  .mexpress-landing__icons-wrapper
+                    .mexpress-landing__edit-icon ✎
+                    .mexpress-landing__tooltip-wrapper
+                      .mexpress-landing__tooltip-icon ?
+                      .mexpress-landing__tooltip-text Опишите блок в инпуте или оставьте пустым - мы сами сделаем.
+
+            
+            .mexpress-landing__item
+              label.mexpress-landing__checkbox-label
+                input(type="checkbox" name="footer" checked)
+                span Футер
+              input(type="text" name="footer-name" placeholder="Опишите футер или оставьте пустым" class="mexpress-landing__item-input")
+              .mexpress-landing__icons-wrapper
+                .mexpress-landing__edit-icon ✎
+                .mexpress-landing__tooltip-wrapper
+                  .mexpress-landing__tooltip-icon ?
+                  .mexpress-landing__tooltip-text._top Нижняя часть сайта с контактами, ссылками и дополнительной информацией
+            .mexpress-landing__service-item.mexpress-landing__add-block-item
+              button.mexpress-landing__add-block.btn(type="button") + Добавить блок
+              span.mexpress-landing__service-price +1к
+              .mexpress-landing__tooltip-wrapper
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text._top Добавление дополнительного блока к сайту. Каждый дополнительный блок стоит 1000₽.
+          .mexpress-landing__total
+            .mexpress-landing__total-label Итого:
+            .mexpress-landing__total-price-wrapper
+              span.mexpress-landing__total-price 10 000 ₽
+              .mexpress-landing__total-tooltip-wrapper.mexpress-landing__tooltip-wrapper(style="display: none;")
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Отмечены особые пожелания. Они согласуются отдельно и оплачиваются дополнительно.
+          
+          button.btn--accent.mexpress-landing__button.mexpress-landing__button--next(type="button") Далее
+        
+        .mexpress-landing__step.mexpress-landing__step--2
+          .mexpress-landing__step-title.h3 Дополнительные услуги
+          
+          .mexpress-landing__version-selection
+            .mexpress-landing__version-title-wrapper
+              .mexpress-landing__version-title Выберите версию сайта:
+              .mexpress-landing__tooltip-wrapper
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text По умолчанию в стоимость входит одна версия сайта (десктоп или мобильная). Вы можете выбрать любую из них. Если нужны обе версии, выберите "Обе версии" за дополнительную плату.
+            .mexpress-landing__version-options
+              label.mexpress-landing__version-option
+                input(type="radio" name="version" value="desktop" checked)
+                span Десктоп версия
+              label.mexpress-landing__version-option
+                input(type="radio" name="version" value="mobile")
+                span Мобильная версия
+              label.mexpress-landing__version-option
+                input(type="radio" name="version" value="both")
+                span Обе версии (+5к)
+          
+          .mexpress-landing__additional-services
+            .mexpress-landing__service-item
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-seo" value="1000")
+                span SEO оптимизация
+                span.mexpress-landing__service-price +1к
+              .mexpress-landing__tooltip-wrapper
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Базовая SEO-оптимизация включает настройку мета-тегов, заголовков, структурированных данных, оптимизацию изображений и другие технические улучшения для лучшей индексации сайта поисковыми системами.
+          
+            .mexpress-landing__service-item
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-email-form" value="2000")
+                span Форма обратной связи по email
+                span.mexpress-landing__service-price +2к
+              .mexpress-landing__tooltip-wrapper
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Верстка формы обратной связи, которая будет размещена в одном из блоков или в модальном окне. Позволяет посетителям отправлять сообщения на ваш email.
+          
+            .mexpress-landing__service-item
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-telegram-form" value="2000")
+                span Форма обратной связи по Telegram
+                span.mexpress-landing__service-price +2к
+              .mexpress-landing__tooltip-wrapper
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Верстка формы обратной связи, которая будет размещена в одном из блоков или в модальном окне. Сообщения будут приходить в ваш Telegram.
+          
+            .mexpress-landing__service-item
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-widget" value="2000")
+                span Подключить виджет обратной связи
+                span.mexpress-landing__service-price +2к
+              .mexpress-landing__tooltip-wrapper
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Готовое решение для обратной связи (например, Jivo, Tawk.to). Плюсы: быстрая установка, готовый функционал. Минусы: меньше гибкости в настройке, зависимость от стороннего сервиса.
+          
+            .mexpress-landing__service-item.mexpress-landing__service-item--with-select
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-support" value="0")
+                span Расширенная поддержка
+              .mexpress-landing__service-select-wrapper
+                select.mexpress-landing__service-select(name="support-period" disabled)
+                  option(value="") Выберите период
+                  option(value="0" data-weeks="1") 1 неделя
+                  option(value="1500" data-months="1") 1 месяц
+                  option(value="3000" data-months="3") 3 месяца
+                  option(value="5000" data-months="6") 6 месяцев
+                  option(value="8000" data-months="12") 1 год
+                span.mexpress-landing__service-price.mexpress-landing__service-price--select(style="display: none;")
+                .mexpress-landing__tooltip-wrapper
+                  .mexpress-landing__tooltip-icon ?
+                  .mexpress-landing__tooltip-text Расширенная техническая поддержка на выбранный период. Включает исправление ошибок, обновления, консультации и помощь с изменениями сверх базовой поддержки (1 неделя).
+          
+            .mexpress-landing__service-item
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-analytics" value="1000")
+                span Базовое подключение Яндекс/Google аналитика
+                span.mexpress-landing__service-price +1к
+              .mexpress-landing__tooltip-wrapper
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Подключение систем аналитики для отслеживания посещений сайта, поведения пользователей, конверсий и других метрик. Помогает понимать эффективность сайта.
+          
+            .mexpress-landing__service-item
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-cms" value="1000")
+                span CMS для редактирования контента
+                span.mexpress-landing__service-price +1к
+              .mexpress-landing__tooltip-wrapper
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Система управления контентом, которая позволяет вам самостоятельно редактировать контент на сайте без помощи программиста.
+          
+            .mexpress-landing__service-item.mexpress-landing__service-item--with-select
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-multilang" value="0")
+                span Мультиязычность
+              .mexpress-landing__service-select-wrapper
+                select.mexpress-landing__service-select(name="multilang-count" disabled)
+                  option(value="") Количество языков
+                  option(value="0" data-count="1") 1 язык
+                  option(value="2000" data-count="2") 2 языка
+                  option(value="3000" data-count="3") 3 языка
+                  option(value="4000" data-count="4") 4 языка
+                span.mexpress-landing__service-price.mexpress-landing__service-price--select(style="display: none;")
+                .mexpress-landing__tooltip-wrapper
+                  .mexpress-landing__tooltip-icon ?
+                  .mexpress-landing__tooltip-text Добавление поддержки нескольких языков на сайте. Первый язык бесплатно, второй язык +2000₽, каждый последующий язык +1000₽.
+          
+            .mexpress-landing__service-item.mexpress-landing__service-item--special
+              label.mexpress-landing__service-checkbox
+                input(type="checkbox" name="service-special" value="0")
+                span Особые пожелания (оплачивается отдельно)
+              .mexpress-landing__tooltip-wrapper.mexpress-landing__tooltip-wrapper--top-right
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Опишите любые дополнительные требования, которые не входят в стандартный пакет услуг. Например, интеграция с внешними сервисами, нестандартный функционал, особые дизайнерские решения и т.д.
+              textarea.mexpress-landing__special-textarea(name="special-requests" placeholder="Опишите ваши особые пожелания или требования..." style="display: none;")
+          
+          .mexpress-landing__included-services
+            button.mexpress-landing__included-toggle(type="button")
+              span Что уже входит в стоимость
+              span.mexpress-landing__toggle-icon ▼
+            .mexpress-landing__included-list
+              .mexpress-landing__included-item
+                span Хедер, 5 блоков и футер
+                span.mexpress-landing__included-price 0 ₽
+              .mexpress-landing__included-item
+                span Базовый дизайн (ручной дизайн на основе типовых решений)
+                span.mexpress-landing__included-price 0 ₽
+              .mexpress-landing__included-item
+                span 1 версия сайта (мобильная или десктоп)
+                span.mexpress-landing__included-price 0 ₽
+              .mexpress-landing__included-item
+                span Помощь с выбором домена
+                span.mexpress-landing__included-price 0 ₽
+              .mexpress-landing__included-item
+                span Помощь с выбором и настройкой хостинга
+                span.mexpress-landing__included-price 0 ₽
+              .mexpress-landing__included-item
+                span Разворачивание на хостинге
+                span.mexpress-landing__included-price 0 ₽
+              .mexpress-landing__included-item
+                span Установка SSL-сертификата
+                span.mexpress-landing__included-price 0 ₽
+              .mexpress-landing__included-item
+                span Мелкие контентные правки (тексты, изображения)
+                span.mexpress-landing__included-price 0 ₽
+              .mexpress-landing__included-item
+                span Поддержка 1 неделя после сдачи
+                span.mexpress-landing__included-price 0 ₽
+          
+          .mexpress-landing__total
+            .mexpress-landing__total-label Итого:
+            .mexpress-landing__total-price-wrapper
+              span.mexpress-landing__total-price 10 000 ₽
+              .mexpress-landing__total-tooltip-wrapper.mexpress-landing__tooltip-wrapper(style="display: none;")
+                .mexpress-landing__tooltip-icon ?
+                .mexpress-landing__tooltip-text Отмечены особые пожелания. Они согласуются отдельно и оплачиваются дополнительно.
+          
+          .mexpress-landing__step-buttons
+            button.btn.mexpress-landing__button--back(type="button") Назад
+            button.btn--accent.mexpress-landing__button.mexpress-landing__button--next(type="button") Далее
+        
+        .mexpress-landing__step.mexpress-landing__step--3
+          .mexpress-landing__step-title.h3 Ваши контакты
+          .mexpress-landing__contacts
+            input(type="text" name="name" placeholder="Имя" required)
+            input(type="phone" name="phone" placeholder="+7 (000) 000-00-00" required)
+            input(type="text" name="telegram" placeholder="Telegram: @username")
+          
+          .mexpress-landing__step-buttons
+            button.btn.mexpress-landing__button--back(type="button") Назад
+            button.btn--accent.mexpress-landing__button(type="submit") Заказать сайт
+          
+          p.mexpress-landing__agreement-text Нажимая кнопку, вы соглашаетесь с 
+            a(href="#" data-modal-open="express-landing-terms" data-modal-close="express-landing" class="terms-link") условиями оказания услуги
+
+.modal-wrapper(data-modal-block="express-landing-terms")
+  .modal-content
+    .x-btn(data-modal-close="express-landing-terms")
+    .mexpress-landing-terms
+      .modal-title.h3 Условия оказания услуги
+      
+      .mexpress-landing-terms__content
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Оплата
+          p Для начала работы требуется полная предоплата. После подтверждения заказа и получения оплаты мы приступаем к разработке вашего лендинга.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Дизайн и контент
+          p В 90% задач мы не используем ИИ для дизайна. Мы создаем ручной дизайн, используя заранее подготовленные типовые дизайнерские решения. Выбор конкретного дизайна не предусмотрен — вы можете описать ваши пожелания с референсами, а мы реализуем проект на свой вкус, обеспечивая качественный результат. Пример нашей работы — 
+            a(href="https://zulkazi.ru" target="_blank" rel="noopener noreferrer") zulkazi.ru
+            | , наш кейс сайта лендинга для нутрициолога.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Поддержка
+          p Мы предоставляем бесплатную поддержку в течение 1 недели после сдачи проекта. Если что-то сломается или потребуется техническая помощь, мы оперативно исправим это без дополнительной оплаты.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Сроки и процесс
+          p Мы создаем лендинг в течение 1-2 рабочих дней. Процесс максимально автоматизирован для быстрой реализации вашего проекта без лишних согласований.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Правки и изменения
+          p Возможны мелкие контентные правки (изменение текстов, замена изображений). Любые дополнительные правки, изменения структуры или функционала, а также особые пожелания оплачиваются отдельно в зависимости от сложности.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Возврат средств
+          p После начала работы возврат средств не предусмотрен. Услуга оказывается в соответствии с техническим заданием, согласованным на этапе заказа.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Хостинг и домен
+          p Стоимость хостинга и домена не входит в цену услуги. Вы можете использовать свой хостинг или мы поможем с выбором подходящего варианта.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Что вы получаете
+          p Готовый лендинг с 5 блоками и футером, адаптированный под мобильные устройства, готовый к размещению на вашем хостинге.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Дополнительные услуги
+          p Возможны дополнительные услуги: SEO оптимизация, формы обратной связи, расширенная поддержка, CMS для редактирования контента, мультиязычность, подключение аналитики и другие. Все особые пожелания и дополнительные требования обсуждаются и оплачиваются отдельно.
+        .mexpress-landing-terms__section
+          h4.mexpress-landing-terms__subtitle Ссылка на наш сайт
+          p В футере вашего сайта (или другом месте по вашему усмотрению) будет размещён логотип с активной ссылкой на наш сайт 
+          .mexpress-landing-terms__logo
+              img(src="img/made-in-basaltcode.svg" alt="Сделано в базальт код")

@@ -11,10 +11,9 @@ mixin slmi(img, title)
     'Разработка сайтов и сервисов',
     'Разработка мобильных приложений',
     'UX/UI дизайн',
-    'Telegram-боты',
-    'Веб-приложения',
-    'CRM-системы',
-    'Создание игр на Unreal Engine',
+    'Разработка ботов',
+    'Техническая поддержка',
+    'Консультации'
   ]
 
   var images = [
@@ -22,10 +21,45 @@ mixin slmi(img, title)
     'img/service-mobile.png',
     'img/service-design.png',
     'img/service-bot.png',
-    'img/service-web-app.png',
     'img/service-crm.png',
-    'img/service-games.png'
+    'img/service-web-app.png'
   ]
+
+  var services = {
+    'Разработка сайтов и сервисов': [
+      'Лендинги',
+      'Интернет-магазины', 
+      'Веб-приложения',
+      'CRM-системы',
+      'LMS-системы'
+    ],
+    'Разработка мобильных приложений': [
+      'iOS',
+      'Android'
+    ],
+    'UX/UI дизайн': [
+      'Интерфейсы сайтов',
+      'Мобильные приложения',
+      'Брендинг',
+      'Логотипы'
+    ],
+    'Разработка ботов': [
+      'Telegram',
+      'WhatsApp'
+    ],
+    'Техническая поддержка': [
+      'Обслуживание сайтов',
+      'Обновления',
+      'Мониторинг',
+      'Резервное копирование'
+    ],
+    'Консультации': [
+      'Техническое планирование',
+      'Выбор технологий',
+      'Архитектура проектов',
+      'Оптимизация'
+    ]
+  }
 
 section#services.sec-services.sec-padding-y
   .container
@@ -37,12 +71,14 @@ section#services.sec-services.sec-padding-y
           +tabs-v-content(index+1, index == 0)
             .sec-services__img.block-absolute.img-cover
               img(src=img, alt="" loading="lazy")
+            .sec-services__subcategories
+              each subcategory in services[titles[index]]
+                .sec-services__subcategory= subcategory
 
     .sec-services__list-mob
       +slmi('img/service-site.png', 'Разработка сайтов и сервисов')
       +slmi('img/service-mobile.png', 'Разработка мобильных приложений')
       +slmi('img/service-design.png', 'UX/UI дизайн')
-      +slmi('img/service-bot.png', 'Telegram-боты')
-      +slmi('img/service-web-app.png', 'Веб-приложения')
-      +slmi('img/service-crm.png', 'CRM-системы')
-      +slmi('img/service-games.png', 'Создание игр на Unreal Engine')
+      +slmi('img/service-bot.png', 'Разработка ботов')
+      +slmi('img/service-crm.png', 'Техническая поддержка')
+      +slmi('img/service-web-app.png', 'Консультации')
